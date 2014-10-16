@@ -1,0 +1,217 @@
+﻿doctype html
+
+html
+  head
+    title alma 
+    include includes/_head
+  body
+    .out
+      #topp.topper
+        .topper-in
+          .container
+            .row
+              .col-md-6.col-xs-6
+                .telephone Käseline: 05573 / 80 80
+              .col-md-6.col-xs-6
+                .subnav
+                  ul.subnav-list
+                    li.subnav-item
+                      a(href="#").subnav-link Mein Konto
+                    li.subnav-item
+                      a(href="#").subnav-link Warenkorb
+                    li.subnav-item
+                      a(href="#").subnav-link Login
+                    li.subnav-item
+                      a(href="#").subnav-link Sprache    
+      header.header
+        .header-bg
+          .container
+            .row
+              .col-md-12.col-xs-12
+                .header-in
+                  a(href="#").header-logo
+                  a(href="#").basket
+                    span.basket-left
+                      i.basket-ico
+                    span.basket-right Warenkorb
+        .nav
+          .container
+            .row
+              .col-md-12.col-xs-12
+                a(href="#").nav-logo
+                ul.nav-list
+                  li.nav-item
+                    a(href="#").nav-link.is-active KÄSE KAUFEN
+                  li.nav-item
+                    a(href="#").nav-link SENNEREIEN
+                  li.nav-item
+                    a(href="#").nav-link INFORMATIONEN
+                  li.nav-item
+                    a(href="#").nav-link  ÜBER UNS
+        .slider-wrap
+          .row
+            .col-md-12.col-lg-12.col-sm-12
+              .slider
+                .slider-in
+                  #carousel-example-generic.carousel.slide.carousel-fade(data-ride='carousel')
+                    ol.carousel-indicators
+                      li.active(data-target='#carousel-example-generic', data-slide-to='0')
+                      li(data-target='#carousel-example-generic', data-slide-to='1')
+                    .carousel-inner
+                      .item.active(style="background-image: url(img/bg.jpg)")
+                      .item(style="background-image: url(img/bg1.jpg)")
+      .page
+        .container
+          .row
+            .col-md-8.col-xs-8
+              .page-in
+                h1.h1 Unsere Sennereien in den Vorarlberger Alpen (H1)
+                .row
+                  .col-md-4.col-xs-4
+                    .prod
+                      .prod-media
+                        img(src="img/img1.jpg", alt="")
+                      .prod-title Bergsennerei Lutzenreuthe
+                      .prod-content
+                        p Setu ut labore et dolore magna aliquyam erat, sed diam voluptua. A vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. 
+                          a(href="#") › nach Lutzenreute
+                  .col-md-4.col-xs-4
+                    .prod
+                      .prod-media
+                        img(src="img/img2.jpg", alt="")
+                      .prod-title Bergsennerei Schnepfau
+                      .prod-content
+                        p Setu ut labore et dolore magna aliquyam erat, sed diam voluptua. A vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. 
+                          a(href="#") › nach Lutzenreute
+                  .col-md-4.col-xs-4
+                    .prod
+                      .prod-media
+                        img(src="img/img3.jpg", alt="")
+                      .prod-title Bergsennerei Hinteregg
+                      .prod-content
+                        p Setu ut labore et dolore magna aliquyam erat, sed diam voluptua. A vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. 
+                          a(href="#") › nach Lutzenreute
+                .step
+                  .step-title So einfach gehts:
+                  .row
+                    .col-md-4.col-xs-4
+                      .step-item
+                        .step-item-media
+                          img(src="img/cheese.png", alt="")
+                        .step-item-meta Käse aussuchen
+                    .col-md-4.col-xs-4
+                      .step-item
+                        .step-item-media
+                          img(src="img/sheet.png", alt="")
+                        .step-item-meta Bestellung ausfüllen
+                    .col-md-4.col-xs-4
+                      .step-item
+                        .step-item-media
+                        .step-item-meta Käse genießen
+                .spesial
+                  .row
+                    .col-md-8.col-xs-8
+                      .spesial-descr
+                        .spesial-title Frischeversand
+                        .spesial-content
+                          p 
+                            | Um die größtmögliche Qualität zu sichern, legen wir größten Wert auf Sorgfalt, nicht nur bei der Herstellung, sondern auch beim Transport.
+                          .text-right
+                            button.btn.btn-success › Versand
+                    .col-md-4.col-xs-4
+                      .spesial-media
+                        img(src="img/img1.png", alt="")
+                .gallery
+                  .row
+                    .col-md-12.col-xs-12
+                      .gallery-title Hot Sales (H2)
+                      .gallery-in
+                        .gallery-prev
+                        .gallery-items
+                          .gallery-item
+                            img(src="img/slide.png", alt="")
+                          .gallery-item
+                            img(src="img/slide.png", alt="")
+                        .gallery-next
+                      .gallery-footer
+                        .gallery-footer-meta Ich bin eine Überschrift 3 (H3)
+            .col-md-4.col-xs-4
+              .bar
+                | 2  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio omnis repellat recusandae minima consequuntur autem vitae accusantium natus eum est asperiores veritatis, ratione maiores vel dolor? Rem quidem quasi at!
+      footer.footer
+        .container
+          .row
+            .col-md-6.col-xs-6
+              .row
+                .col-md-6.col-xs-6
+                  .list
+                    .list-title Alma
+                    ul.list-ul
+                      li.list-item
+                        span.list-link Krüzastraße 8
+                      li.list-item
+                        span.list-link A-6912 Hörbranz
+                      li.list-item
+                        span.list-link T +43 5573 8080
+                      li.list-item
+                        a(href="#") info@alma.at
+                      li.list-item.m-spesial
+                        span › Impressum
+                .col-md-6.col-xs-6
+                  .list
+                    .list-title Informationen
+                    ul.list-ul
+                      li.list-item
+                        a(href="#") FAQ
+                      li.list-item
+                        a(href="#") Versandkosten
+                      li.list-item
+                        a(href="#") Zahlungsarten
+                      li.list-item
+                        a(href="#") Rücksendungen/Retour
+                      li.list-item
+                        a(href="#") Qualität & Garantie
+            .col-md-6.col-xs-6
+              .row
+                .col-md-6.col-xs-6
+                  .list
+                    .list-title Mein Konto
+                    ul.list-ul
+                      li.list-item
+                        a(href="#") Mein Profil
+                      li.list-item
+                        a(href="#") Bestellungen
+                      li.list-item
+                        a(href="#") Paketverfolgung
+                      li.list-item
+                        a(href="#") Bestellungsarchiv
+                .col-md-6.col-xs-6
+                  .list
+                    .list-title Follow us on
+                    .list-social
+                      a(href="#").list-social-fb
+                      a(href="#").list-social-gp
+                      a(href="#").list-social-yt
+                    .list-title Newsletter
+                    .list-row
+                      input.form-control.my-input(type='email', placeholder='eMail-Adresse')
+                    button.btn.btn-gray.btn-xs › Anmelden
+      .basement
+        .container
+          .row
+            .col-md-12.col-xs-12
+              .pay
+                .pay-title Zahlungsarten
+                ul.pay-list
+                  li.pay-list-items
+                    a(href="#").pay-list-item.m1
+                  li.pay-list-items
+                    a(href="#").pay-list-item.m2
+                  li.pay-list-items
+                    a(href="#").pay-list-item.m3
+                  li.pay-list-items
+                    a(href="#").pay-list-item.m4
+                  li.pay-list-items
+                    a(href="#").pay-list-item.m5
+              a(href="#topp").topp
+    script(data-headjs-load='js/init.js', src='js/lib/head.js')

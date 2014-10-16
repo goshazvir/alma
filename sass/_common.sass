@@ -1,0 +1,365 @@
+// 
+// --------------------------------------------------
+
+// Fonts
+// --------------------------------------------------
+
+// Variables & mixins & extend
+// --------------------------------------------------
+$green: #729600
+$blue: #5381AB
+// Common blocks
+body
+	font-size: 14px
+	font-family: Georgia, serif
+	line-height: 1.4
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: antialiased
+.out
+	min-width: 1170px 
+%wrap
+	width: 1070px
+	margin: 0 auto
+.wrap
+	width: 1070px
+	margin: 0 auto
+// Headings
+// --------------------------------------------------
+
+// Nav
+// --------------------------------------------------
+
+// Header
+// --------------------------------------------------
+.telephone
+	padding: 25px 0 20px
+	font-size: 20px
+	font-weight: bold
+	color: $green
+.topper
+	position: relative
+	z-index: 999
+	background: #fff
+	+box-shadow(0 4px 2px rgba(#000, .2))
+.subnav
+	padding: 25px 0 20px
+	text-align: right
+	.subnav-list
+		display: inline-block
+		padding: 0 40px
+		list-style: none
+		+clr
+	.subnav-item
+		float: left
+		margin-left: 20px
+		&:first-child
+			margin-left: 0
+	.subnav-link
+		color: $blue
+
+.header
+	.header-bg
+		height: 212px
+		background: url("../img/header1.png")
+		+cover
+		position: relative
+		&:before
+			content: ""
+			width: 417px
+			height: 229px
+			position: absolute
+			right: 0
+			bottom: 0
+			background: url("../img/header2.png") 
+	.header-logo
+		+s(logo)
+		position: absolute
+		top: 50px
+		left: 0
+	.header-in
+		height: 212px
+		position: relative
+	
+.basket
+	font-size: 0
+	height: 44px
+	position: absolute
+	bottom: 10px
+	right: 0
+	.basket-left
+		display: inline-block
+		vertical-align: top
+		width: 44px
+		height: 44px
+		+border-radius(5px 0 0 5px)
+		background: #EDEDED
+		position: relative
+	.basket-right
+		display: inline-block
+		vertical-align: top
+		height: 44px
+		line-height: 44px
+		padding: 0 15px
+		background: #fff
+		+border-radius(0px 5px 5px 0)
+		font-size: 22px
+		font-weight: bold
+		font-style: italic
+		color: $blue 
+	.basket-ico
+		+s(basket)
+		position: absolute
+		top: 50%
+		margin-top: -10px
+		left: 50%
+		margin-left: -12px 
+
+.nav
+	height: 55px
+	line-height: 66px
+	background: #5482AB
+	+box-shadow(0 4px 2px rgba(#000, .2))
+	.container
+		position: relative
+	.nav-logo
+		display: none
+		position: absolute
+		top: 0
+		left: 40px
+		z-index: 666
+		+s(logo2)
+	.nav-list
+		padding-left: 190px
+		margin: 0
+		+clr
+		list-style: none
+	.nav-item
+		float: left
+	.nav-link
+		display: block
+		padding: 0 25px
+		margin-top: -5px
+		font-size: 16px
+		font-weight: bold 
+		color: #fff
+		text-transform: uppercase
+		position: relative
+		z-index: 666
+		&.is-active
+			height: 87px
+			background: url("../img/icons/nav.png")
+			background-size: 100% 100%
+			&:before, &:after
+				content: ""
+				position: absolute
+			&:before
+				+s(nav-ico1)
+				bottom: 25px
+				left: 15px
+			&:after
+				+s(nav-ico1)
+				top: 10px
+				right: 15px
+
+.slider-wrap
+	padding: 0 15px
+.slider
+	margin: 0 -15px
+	.slider-in
+		margin: 0
+	.carousel-inner
+		.item
+			height: 300px
+			+cover
+	.carousel-indicators
+		display: none
+	.carousel-control
+		display: none
+
+.page
+	width: 100%
+	height: 100% 
+	+box-shadow(inset 0px 4px 2px rgba(#000, .2))
+	background: url("../img/texture.png") 0 0 repeat
+	.page-in
+		.h1
+			margin-bottom: 20px
+			font-size: 28px
+			color: #527FAB
+			font-style: italic
+		
+.prod
+	margin-bottom: 70px
+	background: #fff
+	border-bottom: 1px solid #5482AB 
+	.prod-media
+		margin-bottom: 25px
+		position: relative
+		&:before
+			content: ""
+			height: 28px
+			position: absolute
+			bottom: -14px
+			left: 0
+			right: 0
+			background: url("../img/shadow.png") 
+		img
+			max-width: 100%
+			position: relative
+	.prod-title
+		margin-bottom: 15px
+		font-size: 22px
+		font-weight: bold
+		font-style: italic
+		color: #5280AB 
+	.prod-content
+		p
+			line-height: 1.8  
+			color: #527FAB
+		a
+			float: right
+			color: #729600
+			text-decoration: none 
+
+.footer
+	padding: 30px 0 20px
+	background: #5482AB
+
+.list
+	margin: 0
+	.list-title
+		margin-bottom: 15px
+		font-size: 20px
+		font-style: italic
+		color: #CCC 
+	.list-ul
+		padding: 0
+		list-style: none
+	.list-item
+		margin: 0 0 5px
+		&.m-spesial
+			margin-top: 10px
+	a, span
+		font-weight: bold
+		color: #FFF
+		&:hover
+			text-decoration: none
+	.list-social
+		margin-bottom: 10px
+		a
+			display: inline-block
+			vertical-align: middle
+			margin-left: 25px
+			&:first-child
+				margin-left: 0
+		.list-social-fb
+			+s(fb)
+		.list-social-gp
+			+s(gp)
+		.list-social-yt
+			+s(yt)
+	.list-row
+		margin-bottom: 10px
+.my-input
+	+border-radius(0)
+	color: #999
+
+.btn-gray
+	background: #999
+	color: #fff
+	font-size: 16px
+	font-style: italic
+	&:hover, &:active, &:focus
+		color: #fff
+.basement
+	background: #7EAADB
+	position: relative
+.pay
+	margin: 0
+	.pay-title
+		padding: 20px 0
+		font-size: 20px
+		color: #5280AB
+		font-style: italic
+	.pay-list
+		padding: 0
+		+clr
+		list-style: none
+	.pay-list-items
+		float: left
+		margin-left: 15px
+		&:first-child
+			margin-left: 0 
+	.pay-list-item
+		display: block
+		&.m1
+			+s(pay1)
+		&.m2
+			+s(pay2)
+		&.m3
+			+s(pay3)
+		&.m4
+			+s(pay4)
+		&.m5
+			+s(pay5)
+
+.topp
+	+s(top)
+	position: absolute
+	top: -20px
+	right: 40px
+	
+.page
+	padding: 100px 0 120px
+
+.step
+	padding: 20px 60px 10px
+	margin-bottom: 40px
+	background: #F3F7F8 
+	.step-title
+		margin-bottom: 15px
+		font-size: 28px
+		font-weight: normal
+		color: #5280AB
+		text-align: center
+	.step-item
+		text-align: center
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			left: 10px
+			top: 50%
+			margin-top: -10px
+			+s(arr1)
+	.step-item-media
+		height: 100px
+		margin-bottom: 10px
+	.step-item-meta
+		font-size: 18px
+		font-weight: normal
+		color: #527FAB
+
+.spesial
+	border-bottom: 1px solid #5482AB  
+	.spesial-descr
+		padding-top: 50px
+		padding-left: 60px
+	.spesial-title
+		margin-bottom: 25px
+		font-size: 24px
+		color: #5280AB
+		font-weight: normal
+		font-style: italic 
+	.spesial-content
+		margin-bottom: 30px
+		color: #5280AB
+		font-size: 18px
+	.spesial-media
+		margin-bottom: -6px
+
+// 
+// --------------------------------------------------
+// 
+// --------------------------------------------------
+
