@@ -23,6 +23,8 @@ body
 .wrap
 	width: 1070px
 	margin: 0 auto
+.container
+	width: 1170px !important
 // Headings
 // --------------------------------------------------
 
@@ -84,7 +86,7 @@ body
 	font-size: 0
 	height: 44px
 	position: absolute
-	bottom: 10px
+	bottom: 20px
 	right: 0
 	&.m-nav
 		display: none
@@ -118,6 +120,7 @@ body
 		margin-left: -12px 
 
 .nav
+	min-width: 1170px 
 	height: 55px
 	line-height: 66px
 	background: #5482AB
@@ -141,21 +144,17 @@ body
 		-webkit-transform: translate3d(0px, 0%, 0px)
 		transform: translate3d(0px, 0%, 0px)
 		opacity: 1
-
-		-webkit-animation-name: fadeInDown
-		animation-name: fadeInDow
-		
-		-webkit-animation-duration: 1s
-		animation-duration: 1s
-		-webkit-animation-fill-mode: both
-		animation-fill-mode: both
 		.nav-logo
 			display: block
 		.basket
 			&.m-nav
 				display: block
-	.container
+	.nav-in
 		position: relative
+		@extend %wrap
+		padding: 0 15px
+	// .container
+	// 	position: relative
 	.nav-logo
 		display: none
 		position: absolute
@@ -276,7 +275,7 @@ body
 		&.m-spesial
 			margin-top: 10px
 	a, span
-		font-weight: bold
+		font-weight: normal
 		color: #FFF
 		&:hover
 			text-decoration: none
@@ -310,6 +309,8 @@ body
 .basement
 	background: #7EAADB
 	position: relative
+	.col-md-12, .col-xs-12
+		position: static
 .pay
 	margin: 0
 	.pay-title
@@ -543,6 +544,9 @@ body
 		margin-top: -10px
 		cursor: pointer
 
+.btn-lg
+	font-size: 22px
+	font-style: italic
 // 
 // --------------------------------------------------
 // 
