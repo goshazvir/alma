@@ -214,6 +214,7 @@ body
 		color: #5280AB 
 	.prod-content
 		p
+			overflow: hidden
 			line-height: 1.8  
 			color: #527FAB
 		a
@@ -341,6 +342,7 @@ body
 		color: #527FAB
 
 .spesial
+	margin-bottom: 60px
 	border-bottom: 1px solid #5482AB  
 	.spesial-descr
 		padding-top: 50px
@@ -357,6 +359,154 @@ body
 		font-size: 18px
 	.spesial-media
 		margin-bottom: -6px
+
+.gallery
+	.gallery-in
+		padding-bottom: 25px
+		margin-bottom: 15px
+		border-bottom: 1px solid #5482AB
+		position: relative
+	.h2
+		margin-top: 0
+		margin-bottom: 10px
+		font-size: 24px
+		font-style: italic
+		color: #5280AB
+	.gallery-item
+		width: 620px
+		margin: 0 auto
+		text-align: center
+		img
+			max-width: 100% 
+	.gallery-prev
+		+s(left)
+		position: absolute
+		top: 50%
+		margin-top: -20px
+		left: 0
+		cursor: pointer
+	.gallery-next
+		+s(right)
+		position: absolute
+		top: 50%
+		margin-top: -20px
+		right: 0
+		cursor: pointer
+	.h3
+		margin: 0
+		font-size: 20px
+		font-style: italic
+		color: #5381AB
+		
+
+.bar
+	.bar-title
+		margin-bottom: 15px
+		padding: 0 30px
+		text-align: center
+		font-size: 18px
+		color: #5280AB 
+	.bar-block
+		margin-bottom: 30px
+		background: #fff 
+	.bar-block-header
+		background: #5482AB
+		color: #fff
+		text-align: center
+		position: relative
+		&.m-mod
+			min-height: 50px
+			line-height: 50px
+			.bar-block-header-title
+				padding: 0 50px
+	.bar-block-header-title
+		padding: 10px 0
+		font-size: 22px
+		color: #fff 
+	.bar-block-num
+		position: absolute
+		top: 6px
+		right: 10px
+		width: 38px
+		height: 38px
+		line-height: 38px
+		background: #fff
+		border-radius: 50% 
+		font-size: 18px
+		font-style: italic 
+		color: #739600
+	.bar-block-in
+		padding: 10px 20px 20px
+		font-size: 16px
+		color: #527FAB 
+	.bar-block-note
+		margin-bottom: 10px
+		text-align: center
+	.bar-block-row
+		margin-bottom: 10px
+		position: relative
+		.arr
+			position: absolute
+			top: 5px
+			right: -17px
+		.bar-block-row-label
+			padding: 5px 60px 5px 20px
+			background: #F3F7F8
+			border-radius: 5px
+			position: relative
+			.pen
+				top: 8px
+				right: 25px
+				position: absolute
+			.cross
+				right: 5px
+				top: 8px
+				position: absolute
+	.bar-block-content
+		text-align: left
+	.bar-block-more
+		color: #729600
+	.bar-block-media
+		margin-bottom: 10px
+		img
+			max-width: 100% 
+
+.pen
+	+s(pen)
+	cursor: pointer
+.cross
+	+s(cross)
+	cursor: pointer
+.arr
+	+s(arr1)
+	cursor: pointer
+.green
+	font-size: 16px
+	color: #729600 
+
+.minislide
+	width: 180px
+	margin: 0 auto 15px
+	position: relative
+	.minislide-item
+		width: 100%
+		margin: 0
+	.minislide-prev
+		+s(arr2)
+		position: absolute
+		z-index: 100
+		left: -25px
+		top: 50%
+		margin-top: -10px
+		cursor: pointer
+	.minislide-next
+		+s(arr1)
+		position: absolute
+		z-index: 100
+		right: -25px
+		top: 50%
+		margin-top: -10px
+		cursor: pointer
 
 // 
 // --------------------------------------------------

@@ -59,11 +59,11 @@ html
                       li(data-target='#carousel-example-generic', data-slide-to='1')
                     .carousel-inner
                       .item.active(style="background-image: url(img/bg.jpg)")
-                      .item(style="background-image: url(img/bg1.jpg)")
+                      .item(style="background-image: url(img/bg.jpg)")
       .page
         .container
           .row
-            .col-md-8.col-xs-8
+            .col-md-9.col-xs-9
               .page-in
                 h1.h1 Unsere Sennereien in den Vorarlberger Alpen (H1)
                 .row
@@ -124,20 +124,71 @@ html
                 .gallery
                   .row
                     .col-md-12.col-xs-12
-                      .gallery-title Hot Sales (H2)
+                      h2.h2 Hot Sales (H2)
                       .gallery-in
+                        .js-flexslider
+                          .js-flexslider-in
+                            .gallery-item
+                              img(src="img/slide.png", alt="")
+                            .gallery-item
+                              img(src="img/slide.png", alt="")
                         .gallery-prev
-                        .gallery-items
-                          .gallery-item
-                            img(src="img/slide.png", alt="")
-                          .gallery-item
-                            img(src="img/slide.png", alt="")
                         .gallery-next
                       .gallery-footer
-                        .gallery-footer-meta Ich bin eine Überschrift 3 (H3)
-            .col-md-4.col-xs-4
+                        h3.h3 Ich bin eine Überschrift 3 (H3)
+            .col-md-3.col-xs-3
               .bar
-                | 2  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio omnis repellat recusandae minima consequuntur autem vitae accusantium natus eum est asperiores veritatis, ratione maiores vel dolor? Rem quidem quasi at!
+                .bar-title Im Überblick
+                .bar-block
+                  .bar-block-header.m-mod
+                    .bar-block-header-title Warenkorb
+                    .bar-block-num 2
+                  .bar-block-in
+                    .bar-block-note
+                      .bar-block-note-item Sie haben
+                      .bar-block-note-item 
+                        span.green 2 Artikel 
+                        span im Warenkorb
+                    .bar-block-row
+                      .bar-block-row-label
+                        | Alma Kräuterschatz
+                        i.pen
+                        i.cross
+                      i.arr
+                    .text-right
+                      button.btn.btn-success › zur Kasse
+                .bar-block
+                  .bar-block-header
+                    .bar-block-header-title Die Prämierten
+                  .bar-block-in
+                    .bar-block-note
+                      .bar-block-note-item 
+                        | Vlbg. Bergkäse, 10 Monate gereift
+                      .minislide
+                        .js-minislide
+                          .js-minislide-in
+                            .minislide-item
+                              img(src="img/minislide.png", alt="")
+                            .minislide-item
+                              img(src="img/minislide.png", alt="")
+                          .minislide-prev
+                          .minislide-next
+                      .bar-block-content
+                        p Der Alma Vorarlberger Bergkäse mit geschützter Ursprungs-bezeichnung (g.U.) wird in kleinen Bergsennereien aus unbehandelter Heumilch erzeugt. 
+                      .text-right
+                        a(href="#").bar-block-more › mehr
+                .bar-block
+                  .bar-block-header
+                    .bar-block-header-title Verschenken Sie uns
+                  .bar-block-in
+                    .bar-block-media
+                      img(src="img/media11.png", alt="")
+                    .bar-block-content
+                      p Der Alma Vorarlberger Bergkäse mit geschützter Ursprungs-bezeichnung (g.U.) wird in kleinen Bergsennereien aus unbehandelter Heumilch erzeugt. 
+                    .text-right
+                      button.btn.btn-success.btn-lg › *schenk*
+
+
       footer.footer
         .container
           .row
