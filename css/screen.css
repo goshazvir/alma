@@ -2046,11 +2046,15 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 .header .header-in { height: 212px; position: relative; }
 
 .basket { font-size: 0; height: 44px; position: absolute; bottom: 10px; right: 0; }
+.basket.m-nav { display: none; bottom: 33px; }
 .basket .basket-left { display: inline-block; vertical-align: top; width: 44px; height: 44px; -moz-border-radius: 5px 0 0 5px; -webkit-border-radius: 5px; border-radius: 5px 0 0 5px; background: #ededed; position: relative; }
 .basket .basket-right { display: inline-block; vertical-align: top; height: 44px; line-height: 44px; padding: 0 15px; background: white; -moz-border-radius: 0px 5px 5px 0; -webkit-border-radius: 0px; border-radius: 0px 5px 5px 0; font-size: 22px; font-weight: bold; font-style: italic; color: #5381ab; }
 .basket .basket-ico { background: url('../img/icons-s08470d89e4.png') 0 -60px no-repeat; width: 23px; height: 20px; position: absolute; top: 50%; margin-top: -10px; left: 50%; margin-left: -12px; }
 
-.nav { height: 55px; line-height: 66px; background: #5482ab; -webkit-box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2); box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2); }
+.nav { height: 55px; line-height: 66px; background: #5482ab; -webkit-box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2); box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2); z-index: 999; }
+.nav.is-fixed { position: fixed; left: 0; right: 0; top: 0px; }
+.nav.is-fixed .nav-logo { display: block; }
+.nav.is-fixed .basket.m-nav { display: block; }
 .nav .container { position: relative; }
 .nav .nav-logo { display: none; position: absolute; top: 0; left: 40px; z-index: 666; background: url('../img/icons-s08470d89e4.png') 0 -368px no-repeat; width: 108px; height: 71px; }
 .nav .nav-list { padding-left: 190px; margin: 0; *zoom: 1; list-style: none; }

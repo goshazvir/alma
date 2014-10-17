@@ -86,6 +86,9 @@ body
 	position: absolute
 	bottom: 10px
 	right: 0
+	&.m-nav
+		display: none
+		bottom: 33px
 	.basket-left
 		display: inline-block
 		vertical-align: top
@@ -119,6 +122,23 @@ body
 	line-height: 66px
 	background: #5482AB
 	+box-shadow(0 4px 2px rgba(#000, .2))
+	z-index: 999
+	// +transition(all linear 0.3s)
+	// -webkit-transform: translate3d(0px, 0%, 0px)
+	// transform: translate3d(0px, 0%, 0px)
+	&.is-fixed
+		position: fixed
+		left: 0
+		right: 0
+		top: 0px
+		// +transition(all linear 0.3s)
+		// -webkit-transform: translate3d(0px, 0%, 0px)
+		// transform: translate3d(0px, 0%, 0px)
+		.nav-logo
+			display: block
+		.basket
+			&.m-nav
+				display: block
 	.container
 		position: relative
 	.nav-logo
