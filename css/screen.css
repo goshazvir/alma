@@ -2185,6 +2185,6 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 .minislide .minislide-prev { background: url('../img/icons-s08470d89e4.png') 0 -30px no-repeat; width: 11px; height: 20px; position: absolute; z-index: 100; left: -25px; top: 50%; margin-top: -10px; cursor: pointer; }
 .minislide .minislide-next { background: url('../img/icons-s08470d89e4.png') 0 0 no-repeat; width: 11px; height: 20px; position: absolute; z-index: 100; right: -25px; top: 50%; margin-top: -10px; cursor: pointer; }
 
-.btn-lg, .btn-group-lg > .btn { font-size: 22px; font-style: italic; }
+.btn-lg, .btn-group-lg > .btn { font-size: 22px; font-style: italic; padding: 4px 25px; }
 
 .btn-schenk { padding: 4px 25px; }
