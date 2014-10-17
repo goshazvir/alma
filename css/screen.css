@@ -2051,8 +2051,9 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 .basket .basket-right { display: inline-block; vertical-align: top; height: 44px; line-height: 44px; padding: 0 15px; background: white; -moz-border-radius: 0px 5px 5px 0; -webkit-border-radius: 0px; border-radius: 0px 5px 5px 0; font-size: 22px; font-weight: bold; font-style: italic; color: #5381ab; }
 .basket .basket-ico { background: url('../img/icons-s08470d89e4.png') 0 -60px no-repeat; width: 23px; height: 20px; position: absolute; top: 50%; margin-top: -10px; left: 50%; margin-left: -12px; }
 
-.nav { height: 55px; line-height: 66px; background: #5482ab; -webkit-box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2); box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2); z-index: 999; }
-.nav.is-fixed { position: fixed; left: 0; right: 0; top: 0px; }
+.nav { height: 55px; line-height: 66px; background: #5482ab; -webkit-box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2); box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2); position: relative; z-index: 999; -webkit-transition: all linear 0.3s; -o-transition: all linear 0.3s; transition: all linear 0.3s; }
+.nav.test { -webkit-transition: all linear 0.3s; -o-transition: all linear 0.3s; transition: all linear 0.3s; -webkit-transform: translate3d(0px, -100%, 0px); transform: translate3d(0px, -100%, 0px); }
+.nav.is-fixed { position: fixed; left: 0; right: 0; top: 0px; -webkit-transition: all linear 0.3s; -o-transition: all linear 0.3s; transition: all linear 0.3s; -webkit-transform: translate3d(0px, 0%, 0px); transform: translate3d(0px, 0%, 0px); opacity: 1; -webkit-animation-name: fadeInDown; animation-name: fadeInDow; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
 .nav.is-fixed .nav-logo { display: block; }
 .nav.is-fixed .basket.m-nav { display: block; }
 .nav .container { position: relative; }

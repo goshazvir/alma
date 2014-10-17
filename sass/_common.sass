@@ -122,18 +122,33 @@ body
 	line-height: 66px
 	background: #5482AB
 	+box-shadow(0 4px 2px rgba(#000, .2))
+	position: relative
 	z-index: 999
+	+transition(all linear 0.3s)
 	// +transition(all linear 0.3s)
 	// -webkit-transform: translate3d(0px, 0%, 0px)
 	// transform: translate3d(0px, 0%, 0px)
+	&.test
+		+transition(all linear 0.3s)
+		-webkit-transform: translate3d(0px, -100%, 0px)
+		transform: translate3d(0px, -100%, 0px)
 	&.is-fixed
 		position: fixed
 		left: 0
 		right: 0
 		top: 0px
-		// +transition(all linear 0.3s)
-		// -webkit-transform: translate3d(0px, 0%, 0px)
-		// transform: translate3d(0px, 0%, 0px)
+		+transition(all linear 0.3s)
+		-webkit-transform: translate3d(0px, 0%, 0px)
+		transform: translate3d(0px, 0%, 0px)
+		opacity: 1
+
+		-webkit-animation-name: fadeInDown
+		animation-name: fadeInDow
+		
+		-webkit-animation-duration: 1s
+		animation-duration: 1s
+		-webkit-animation-fill-mode: both
+		animation-fill-mode: both
 		.nav-logo
 			display: block
 		.basket
