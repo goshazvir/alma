@@ -2048,13 +2048,22 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 
 .subnav { padding: 25px 0 20px; text-align: right; }
 @media only screen and (max-width: 768px) { .subnav { padding: 0 0 25px; text-align: center; } }
-.subnav .subnav-list { display: inline-block; padding: 0 40px; margin: 0; list-style: none; *zoom: 1; }
-.subnav .subnav-list:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 1187px) { .subnav .subnav-list { padding: 0; } }
-.subnav .subnav-item { float: left; margin-left: 20px; }
-@media only screen and (max-width: 768px) { .subnav .subnav-item { width: 50%; margin-left: 0; } }
-.subnav .subnav-item:first-child { margin-left: 0; }
-.subnav .subnav-link { color: #5381ab; }
+
+.subnav-list { display: inline-block; padding: 0 40px; margin: 0; list-style: none; *zoom: 1; }
+.subnav-list:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 1187px) { .subnav-list { padding: 0; } }
+
+.subnav-item { float: left; margin-left: 20px; position: relative; }
+@media only screen and (max-width: 768px) { .subnav-item { width: 50%; margin-left: 0; } }
+.subnav-item:first-child { margin-left: 0; }
+
+.subnav-link { color: #5381ab; }
+
+.dropdown { display: none; min-width: 200px; padding: 0; background: #5482ab; list-style: none; position: absolute; top: 0; margin-top: 55px; }
+@media only screen and (max-width: 768px) { .dropdown { position: static; margin-top: 0; padding-left: 40px; } }
+.dropdown .dropdown-link { padding-left: 20px; display: block; font-size: 16px; font-weight: bold; color: white; text-transform: uppercase; }
+@media only screen and (max-width: 768px) { .dropdown .dropdown-link { position: relative; }
+  .dropdown .dropdown-link:before { content: ""; background: url('../img/icons-s3f4e7aa620.png') 0 -503px no-repeat; width: 6px; height: 8px; position: absolute; left: 0px; top: 50%; margin-top: -4px; } }
 
 .header .header-bg { height: 212px; background: url("../img/header1.png"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; }
 .header .header-bg:before { content: ""; width: 417px; height: 229px; position: absolute; right: 0; bottom: 0; background: url("../img/header2.png"); }
@@ -2097,6 +2106,7 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 .nav .nav-mobile .nav-mobile-ico { background: url('../img/icons-s3f4e7aa620.png') 0 -521px no-repeat; width: 33px; height: 21px; display: inline-block; vertical-align: middle; margin-right: 10px; }
 .nav .nav-mobile .nav-mobile-title { display: inline-block; vertical-align: middle; }
 .nav .nav-item { float: left; }
+.nav .nav-item:hover .dropdown { display: block; }
 @media only screen and (max-width: 768px) { .nav .nav-item { float: none; margin: 0 15px; border-bottom: 1px solid #7eaadb; }
   .nav .nav-item:first-child { border-bottom: none; }
   .nav .nav-item:last-child { border-bottom: none; } }
@@ -2121,8 +2131,8 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 .page { width: 100%; height: 100%; -webkit-box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.2); box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.2); background: url("../img/texture.png") 0 0 repeat; }
 .page .page-in .h1 { margin-bottom: 20px; font-size: 28px; color: #527fab; font-style: italic; }
 
-.prod { margin-bottom: 70px; background: white; border-bottom: 1px solid #5482ab; }
-@media only screen and (max-width: 768px) { .prod { margin-bottom: 30px; } }
+.prod { margin-bottom: 70px; background: white; border-bottom: 1px solid #5482ab; height: 400px; overflow: hidden; }
+@media only screen and (max-width: 1187px) { .prod { margin-bottom: 30px; height: auto; } }
 .prod .prod-media { margin-bottom: 25px; position: relative; }
 .prod .prod-media:before { content: ""; height: 28px; position: absolute; bottom: -14px; left: 0; right: 0; background: url("../img/shadow.png") 0 0 no-repeat; }
 @media only screen and (max-width: 1024px) { .prod .prod-media:before { content: none; } }

@@ -82,24 +82,56 @@ body
 	+r(w768)
 		padding: 0 0 25px
 		text-align: center
-	.subnav-list
-		display: inline-block
-		padding: 0 40px
-		margin: 0
-		list-style: none
-		+clr
-		+r(w1170)
-			padding: 0
-	.subnav-item
-		float: left
-		margin-left: 20px
+
+.subnav-list
+	display: inline-block
+	padding: 0 40px
+	margin: 0
+	list-style: none
+	+clr
+	+r(w1170)
+		padding: 0
+.subnav-item
+	float: left
+	margin-left: 20px
+	position: relative
+	+r(w768)
+		width: 50%
+		margin-left: 0
+	&:first-child
+		margin-left: 0
+.subnav-link
+	color: $blue
+
+.dropdown
+	display: none
+	min-width: 200px
+	padding: 0
+	background: #5482AB
+	list-style: none
+	position: absolute
+	top: 0
+	margin-top: 55px
+	+r(w768)
+		position: static
+		margin-top: 0
+		padding-left: 40px
+	.dropdown-link
+		padding-left: 20px
+		display: block
+		font-size: 16px
+		font-weight: bold
+		color: white
+		text-transform: uppercase
 		+r(w768)
-			width: 50%
-			margin-left: 0
-		&:first-child
-			margin-left: 0
-	.subnav-link
-		color: $blue
+			position: relative
+			&:before
+				content: ""
+				+s(nav-arr)
+				position: absolute
+				left: 0px
+				top: 50%
+				margin-top: -4px
 
 .header
 	.header-bg
@@ -269,6 +301,9 @@ body
 			vertical-align: middle
 	.nav-item
 		float: left
+		&:hover
+			.dropdown
+				display: block
 		+r(w768)
 			float: none
 			margin: 0 15px
@@ -351,8 +386,11 @@ body
 	margin-bottom: 70px
 	background: #fff
 	border-bottom: 1px solid #5482AB
-	+r(w768)
+	height: 400px
+	overflow: hidden
+	+r(w1170)
 		margin-bottom: 30px
+		height: auto
 	.prod-media
 		margin-bottom: 25px
 		position: relative
