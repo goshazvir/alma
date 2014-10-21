@@ -84,4 +84,13 @@ head.ready(function() {
 			}
 		});
 
+		$('.js-toogle-top').on('click', function() {
+		 $(".topper").toggleClass("is-active");
+		 $(".topper-in").slideToggle()("is-active");
+		});
+
+		$('.js-navmobile').on('click', function() {
+		 $(".nav-list").slideToggle();
+		});
+
 });

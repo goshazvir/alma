@@ -8,11 +8,11 @@ html
     .out
       #topp.topper
         .topper-in
-          .container
+          .container-fluid
             .row
-              .col-md-6.col-xs-6
+              .col-md-6.col-xs-12.col-sm-6
                 .telephone Käseline: 05573 / 80 80
-              .col-md-6.col-xs-6
+              .col-md-6.col-xs-12.col-sm-6
                 .subnav
                   ul.subnav-list
                     li.subnav-item
@@ -23,6 +23,7 @@ html
                       a(href="#").subnav-link Login
                     li.subnav-item
                       a(href="#").subnav-link Sprache    
+        .topper-arr.js-toogle-top
       header.header
         .header-bg
           .container
@@ -36,22 +37,28 @@ html
                     span.basket-right Warenkorb
         .nav.js-nav
           .nav-in
-            .row
-              .col-md-12.col-xs-12
-                a(href="#").nav-logo
-                ul.nav-list
-                  li.nav-item
-                    a(href="#").nav-link.is-active KÄSE KAUFEN
-                  li.nav-item
-                    a(href="#").nav-link SENNEREIEN
-                  li.nav-item
-                    a(href="#").nav-link INFORMATIONEN
-                  li.nav-item
-                    a(href="#").nav-link  ÜBER UNS
-                a(href="#").basket.m-nav
-                  span.basket-left
-                    i.basket-ico
-                  span.basket-right Warenkorb
+            .container
+              .row
+                .col-md-12.col-xs-12
+                  a(href="#").nav-logo
+                  .nav-wrap-list
+                    .nav-mobile.js-navmobile
+                      .nav-mobile-ico
+                      .nav-mobile-title MENÜ
+                    ul.nav-list
+                      li.nav-item
+                        a(href="#").nav-link.is-active.hide-768 KÄSE KAUFEN
+                      li.nav-item
+                        a(href="#").nav-link SENNEREIEN
+                      li.nav-item
+                        a(href="#").nav-link INFORMATIONEN
+                      li.nav-item
+                        a(href="#").nav-link  ÜBER UNS
+                  a(href="#").mobile-cheese
+                  a(href="#").basket.m-nav
+                    span.basket-left
+                      i.basket-ico
+                    span.basket-right Warenkorb
         .slider-wrap
           .row
             .col-md-12.col-lg-12.col-sm-12
@@ -67,11 +74,11 @@ html
       .page
         .container
           .row
-            .col-md-9.col-xs-9
+            .col-md-12.col-lg-9
               .page-in
                 h1.h1 Unsere Sennereien in den Vorarlberger Alpen (H1)
                 .row
-                  .col-md-4.col-xs-4
+                  .col-lg-4.col-md-4.col-xs-12
                     .prod
                       .prod-media
                         img(src="img/img1.jpg", alt="")
@@ -79,7 +86,7 @@ html
                       .prod-content
                         p Setu ut labore et dolore magna aliquyam erat, sed diam voluptua. A vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. 
                           a(href="#") › nach Lutzenreute
-                  .col-md-4.col-xs-4
+                  .col-lg-4.col-md-4.col-xs-12
                     .prod
                       .prod-media
                         img(src="img/img2.jpg", alt="")
@@ -87,7 +94,7 @@ html
                       .prod-content
                         p Setu ut labore et dolore magna aliquyam erat, sed diam voluptua. A vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. 
                           a(href="#") › nach Lutzenreute
-                  .col-md-4.col-xs-4
+                  .col-lg-4.col-md-4.col-xs-12
                     .prod
                       .prod-media
                         img(src="img/img3.jpg", alt="")
@@ -98,19 +105,20 @@ html
                 .step
                   .step-title So einfach gehts:
                   .row
-                    .col-md-4.col-xs-4
+                    .col-lg-4.col-md-4.col-sm-4.col-xs-12
                       .step-item
                         .step-item-media
                           img(src="img/cheese.png", alt="")
                         .step-item-meta Käse aussuchen
-                    .col-md-4.col-xs-4
+                    .col-lg-4.col-md-4.col-sm-4.col-xs-12
                       .step-item
                         .step-item-media
                           img(src="img/sheet.png", alt="")
                         .step-item-meta Bestellung ausfüllen
-                    .col-md-4.col-xs-4
-                      .step-item
+                    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+                      .step-item.m-mod
                         .step-item-media
+                          img(src="img/cheese.png", alt="")
                         .step-item-meta Käse genießen
                 .spesial
                   .row
@@ -124,7 +132,6 @@ html
                             button.btn.btn-success.btn-lg › Versand
                     .col-md-4.col-xs-4
                       .spesial-media
-                        img(src="img/img1.png", alt="")
                 .gallery
                   .row
                     .col-md-12.col-xs-12
@@ -140,68 +147,72 @@ html
                         .gallery-next
                       .gallery-footer
                         h3.h3 Ich bin eine Überschrift 3 (H3)
-            .col-md-3.col-xs-3
+            .col-md-12.col-lg-3
               .bar
                 .bar-title Im Überblick
-                .bar-block
-                  .bar-block-header.m-mod
-                    .bar-block-header-title Warenkorb
-                    .bar-block-num 2
-                  .bar-block-in
-                    .bar-block-note
-                      .bar-block-note-item Sie haben
-                      .bar-block-note-item 
-                        span.green 2 Artikel 
-                        span im Warenkorb
-                    .bar-block-row
-                      .bar-block-row-label
-                        | Alma Kräuterschatz
-                        i.pen
-                        i.cross
-                      i.arr
-                    .text-right
-                      button.btn.btn-success › zur Kasse
-                .bar-block
-                  .bar-block-header
-                    .bar-block-header-title Die Prämierten
-                  .bar-block-in
-                    .bar-block-note
-                      .bar-block-note-item 
-                        | Vlbg. Bergkäse, 10 Monate gereift
-                      .minislide
-                        .js-minislide
-                          .js-minislide-in
-                            .minislide-item
-                              img(src="img/minislide.png", alt="")
-                            .minislide-item
-                              img(src="img/minislide.png", alt="")
-                          .minislide-prev
-                          .minislide-next
-                      .bar-block-content
-                        p Der Alma Vorarlberger Bergkäse mit geschützter Ursprungs-bezeichnung (g.U.) wird in kleinen Bergsennereien aus unbehandelter Heumilch erzeugt. 
-                      .text-right
-                        a(href="#").bar-block-more › mehr
-                .bar-block
-                  .bar-block-header
-                    .bar-block-header-title Verschenken Sie uns
-                  .bar-block-in
-                    .bar-block-media
-                      img(src="img/media11.png", alt="")
-                    .bar-block-content
-                      p Der Alma Vorarlberger Bergkäse mit geschützter Ursprungs-bezeichnung (g.U.) wird in kleinen Bergsennereien aus unbehandelter Heumilch erzeugt. 
-                    .text-right
-                      button.btn.btn-success.btn-lg › *schenk*
+                .row
+                  .col-sm-4.col-md-4.col-lg-12
+                    .bar-block
+                      .bar-block-header.m-mod
+                        .bar-block-header-title Warenkorb
+                        .bar-block-num 2
+                      .bar-block-in
+                        .bar-block-note
+                          .bar-block-note-item Sie haben
+                          .bar-block-note-item 
+                            span.green 2 Artikel 
+                            span im Warenkorb
+                        .bar-block-row
+                          .bar-block-row-label
+                            | Alma Kräuterschatz
+                            i.pen
+                            i.cross
+                          i.arr
+                        .text-right
+                          button.btn.btn-success › zur Kasse
+                  .col-sm-4.col-md-4.col-lg-12
+                    .bar-block
+                      .bar-block-header
+                        .bar-block-header-title Die Prämierten
+                      .bar-block-in
+                        .bar-block-note
+                          .bar-block-note-item 
+                            | Vlbg. Bergkäse, 10 Monate gereift
+                          .minislide
+                            .js-minislide
+                              .js-minislide-in
+                                .minislide-item
+                                  img(src="img/minislide.png", alt="")
+                                .minislide-item
+                                  img(src="img/minislide.png", alt="")
+                              .minislide-prev
+                              .minislide-next
+                          .bar-block-content
+                            p Der Alma Vorarlberger Bergkäse mit geschützter Ursprungs-bezeichnung (g.U.) wird in kleinen Bergsennereien aus unbehandelter Heumilch erzeugt. 
+                          .text-right
+                            a(href="#").bar-block-more › mehr
+                  .col-sm-4.col-md-4.col-lg-12
+                    .bar-block
+                      .bar-block-header
+                        .bar-block-header-title Verschenken Sie uns
+                      .bar-block-in
+                        .bar-block-media
+                          img(src="img/media11.png", alt="")
+                        .bar-block-content
+                          p Der Alma Vorarlberger Bergkäse mit geschützter Ursprungs-bezeichnung (g.U.) wird in kleinen Bergsennereien aus unbehandelter Heumilch erzeugt. 
+                        .text-right
+                          button.btn.btn-success.btn-lg › *schenk*
 
 
       footer.footer
         .container
           .row
-            .col-md-6.col-xs-6
+            .col-md-12.col-lg-9
               .row
-                .col-md-6.col-xs-6
+                .col-lg-4.col-md-4.col-xs-12
                   .list
                     .list-title Alma
-                    ul.list-ul
+                    ul.list-ul.m-addr
                       li.list-item
                         span.list-link Krüzastraße 8
                       li.list-item
@@ -212,7 +223,7 @@ html
                         a(href="#") info@alma.at
                       li.list-item.m-spesial
                         span › Impressum
-                .col-md-6.col-xs-6
+                .col-lg-4.col-md-4.col-xs-12
                   .list
                     .list-title Informationen
                     ul.list-ul
@@ -226,9 +237,7 @@ html
                         a(href="#") Rücksendungen/Retour
                       li.list-item
                         a(href="#") Qualität & Garantie
-            .col-md-6.col-xs-6
-              .row
-                .col-md-6.col-xs-6
+                .col-lg-4.col-md-4.col-xs-12
                   .list
                     .list-title Mein Konto
                     ul.list-ul
@@ -240,18 +249,24 @@ html
                         a(href="#") Paketverfolgung
                       li.list-item
                         a(href="#") Bestellungsarchiv
-                .col-md-6.col-xs-6
-                  .list
-                    .list-title Follow us on
-                    .list-social
-                      a(href="#").list-social-fb
-                      a(href="#").list-social-gp
-                      a(href="#").list-social-yt
-                    .list-title Newsletter
-                    .list-row
-                      input.form-control.my-input(type='email', placeholder='eMail-Adresse')
-                    .text-right
-                      button.btn.btn-gray.btn-xs › Anmelden
+            .col-md-12.col-lg-3
+              .row
+                .col-md-12.col-xs-12
+                  .row
+                    .col-sm-4.col-md-4.col-lg-12
+                      .list
+                        .list-title Follow us on
+                        .list-social
+                          a(href="#").list-social-fb
+                          a(href="#").list-social-gp
+                          a(href="#").list-social-yt
+                    .col-sm-4.col-md-4.col-lg-12
+                      .list.m-border
+                        .list-title Newsletter
+                        .list-row
+                          input.form-control.my-input(type='email', placeholder='eMail-Adresse')
+                        .text-right
+                          button.btn.btn-gray.btn-xs › Anmelden
       .basement
         .container
           .row
