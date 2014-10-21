@@ -14,12 +14,12 @@
     <div class="out">
       <div id="topp" class="topper">
         <div class="topper-in">
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-md-6 col-xs-6">
+              <div class="col-md-6 col-xs-12 col-sm-6">
                 <div class="telephone">Käseline: 05573 / 80 80</div>
               </div>
-              <div class="col-md-6 col-xs-6">
+              <div class="col-md-6 col-xs-12 col-sm-6">
                 <div class="subnav">
                   <ul class="subnav-list">
                     <li class="subnav-item"><a href="#" class="subnav-link">Mein Konto</a></li>
@@ -32,6 +32,7 @@
             </div>
           </div>
         </div>
+        <div class="topper-arr js-toogle-top"></div>
       </div>
       <header class="header">
         <div class="header-bg">
@@ -45,14 +46,22 @@
         </div>
         <div class="nav js-nav">
           <div class="nav-in">
-            <div class="row">
-              <div class="col-md-12 col-xs-12"><a href="#" class="nav-logo"></a>
-                <ul class="nav-list">
-                  <li class="nav-item"><a href="#" class="nav-link is-active">KÄSE KAUFEN</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">SENNEREIEN</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">INFORMATIONEN</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link"> ÜBER UNS</a></li>
-                </ul><a href="#" class="basket m-nav"><span class="basket-left"><i class="basket-ico"></i></span><span class="basket-right">Warenkorb</span></a>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-xs-12"><a href="#" class="nav-logo"></a>
+                  <div class="nav-wrap-list">
+                    <div class="nav-mobile js-navmobile">
+                      <div class="nav-mobile-ico"></div>
+                      <div class="nav-mobile-title">MENÜ</div>
+                    </div>
+                    <ul class="nav-list">
+                      <li class="nav-item"><a href="#" class="nav-link is-active hide-768">KÄSE KAUFEN</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">SENNEREIEN</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">INFORMATIONEN</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link"> ÜBER UNS</a></li>
+                    </ul>
+                  </div><a href="#" class="mobile-cheese"></a><a href="#" class="basket m-nav"><span class="basket-left"><i class="basket-ico"></i></span><span class="basket-right">Warenkorb</span></a>
+                </div>
               </div>
             </div>
           </div>
@@ -81,11 +90,11 @@
       <div class="page">
         <div class="container">
           <div class="row">
-            <div class="col-md-9 col-xs-9">
+            <div class="col-md-12 col-lg-9">
               <div class="page-in">
                 <h1 class="h1">Unsere Sennereien in den Vorarlberger Alpen (H1)</h1>
                 <div class="row">
-                  <div class="col-md-4 col-xs-4">
+                  <div class="col-lg-4 col-md-4 col-xs-12">
                     <div class="prod">
                       <div class="prod-media"><img src="img/img1.jpg" alt=""></div>
                       <div class="prod-title">Bergsennerei Lutzenreuthe</div>
@@ -94,7 +103,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 col-xs-4">
+                  <div class="col-lg-4 col-md-4 col-xs-12">
                     <div class="prod">
                       <div class="prod-media"><img src="img/img2.jpg" alt=""></div>
                       <div class="prod-title">Bergsennerei Schnepfau</div>
@@ -103,7 +112,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 col-xs-4">
+                  <div class="col-lg-4 col-md-4 col-xs-12">
                     <div class="prod">
                       <div class="prod-media"><img src="img/img3.jpg" alt=""></div>
                       <div class="prod-title">Bergsennerei Hinteregg</div>
@@ -116,21 +125,21 @@
                 <div class="step">
                   <div class="step-title">So einfach gehts:</div>
                   <div class="row">
-                    <div class="col-md-4 col-xs-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                       <div class="step-item">
                         <div class="step-item-media"><img src="img/cheese.png" alt=""></div>
                         <div class="step-item-meta">Käse aussuchen</div>
                       </div>
                     </div>
-                    <div class="col-md-4 col-xs-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                       <div class="step-item">
                         <div class="step-item-media"><img src="img/sheet.png" alt=""></div>
                         <div class="step-item-meta">Bestellung ausfüllen</div>
                       </div>
                     </div>
-                    <div class="col-md-4 col-xs-4">
-                      <div class="step-item">
-                        <div class="step-item-media"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <div class="step-item m-mod">
+                        <div class="step-item-media"><img src="img/cheese.png" alt=""></div>
                         <div class="step-item-meta">Käse genießen</div>
                       </div>
                     </div>
@@ -150,7 +159,7 @@
                       </div>
                     </div>
                     <div class="col-md-4 col-xs-4">
-                      <div class="spesial-media"><img src="img/img1.png" alt=""></div>
+                      <div class="spesial-media"></div>
                     </div>
                   </div>
                 </div>
@@ -176,62 +185,70 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-xs-3">
+            <div class="col-md-12 col-lg-3">
               <div class="bar">
                 <div class="bar-title">Im Überblick</div>
-                <div class="bar-block">
-                  <div class="bar-block-header m-mod">
-                    <div class="bar-block-header-title">Warenkorb</div>
-                    <div class="bar-block-num">2</div>
-                  </div>
-                  <div class="bar-block-in">
-                    <div class="bar-block-note">
-                      <div class="bar-block-note-item">Sie haben</div>
-                      <div class="bar-block-note-item"><span class="green">2 Artikel </span><span>im Warenkorb</span></div>
-                    </div>
-                    <div class="bar-block-row">
-                      <div class="bar-block-row-label">Alma Kräuterschatz<i class="pen"></i><i class="cross"></i></div><i class="arr"></i>
-                    </div>
-                    <div class="text-right">
-                      <button class="btn btn-success">› zur Kasse</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="bar-block">
-                  <div class="bar-block-header">
-                    <div class="bar-block-header-title">Die Prämierten</div>
-                  </div>
-                  <div class="bar-block-in">
-                    <div class="bar-block-note">
-                      <div class="bar-block-note-item">Vlbg. Bergkäse, 10 Monate gereift</div>
-                      <div class="minislide">
-                        <div class="js-minislide">
-                          <div class="js-minislide-in">
-                            <div class="minislide-item"><img src="img/minislide.png" alt=""></div>
-                            <div class="minislide-item"><img src="img/minislide.png" alt=""></div>
-                          </div>
-                          <div class="minislide-prev"></div>
-                          <div class="minislide-next"></div>
+                <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-12">
+                    <div class="bar-block">
+                      <div class="bar-block-header m-mod">
+                        <div class="bar-block-header-title">Warenkorb</div>
+                        <div class="bar-block-num">2</div>
+                      </div>
+                      <div class="bar-block-in">
+                        <div class="bar-block-note">
+                          <div class="bar-block-note-item">Sie haben</div>
+                          <div class="bar-block-note-item"><span class="green">2 Artikel </span><span>im Warenkorb</span></div>
+                        </div>
+                        <div class="bar-block-row">
+                          <div class="bar-block-row-label">Alma Kräuterschatz<i class="pen"></i><i class="cross"></i></div><i class="arr"></i>
+                        </div>
+                        <div class="text-right">
+                          <button class="btn btn-success">› zur Kasse</button>
                         </div>
                       </div>
-                      <div class="bar-block-content">
-                        <p>Der Alma Vorarlberger Bergkäse mit geschützter Ursprungs-bezeichnung (g.U.) wird in kleinen Bergsennereien aus unbehandelter Heumilch erzeugt. </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-lg-12">
+                    <div class="bar-block">
+                      <div class="bar-block-header">
+                        <div class="bar-block-header-title">Die Prämierten</div>
                       </div>
-                      <div class="text-right"><a href="#" class="bar-block-more">› mehr</a></div>
+                      <div class="bar-block-in">
+                        <div class="bar-block-note">
+                          <div class="bar-block-note-item">Vlbg. Bergkäse, 10 Monate gereift</div>
+                          <div class="minislide">
+                            <div class="js-minislide">
+                              <div class="js-minislide-in">
+                                <div class="minislide-item"><img src="img/minislide.png" alt=""></div>
+                                <div class="minislide-item"><img src="img/minislide.png" alt=""></div>
+                              </div>
+                              <div class="minislide-prev"></div>
+                              <div class="minislide-next"></div>
+                            </div>
+                          </div>
+                          <div class="bar-block-content">
+                            <p>Der Alma Vorarlberger Bergkäse mit geschützter Ursprungs-bezeichnung (g.U.) wird in kleinen Bergsennereien aus unbehandelter Heumilch erzeugt. </p>
+                          </div>
+                          <div class="text-right"><a href="#" class="bar-block-more">› mehr</a></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="bar-block">
-                  <div class="bar-block-header">
-                    <div class="bar-block-header-title">Verschenken Sie uns</div>
-                  </div>
-                  <div class="bar-block-in">
-                    <div class="bar-block-media"><img src="img/media11.png" alt=""></div>
-                    <div class="bar-block-content">
-                      <p>Der Alma Vorarlberger Bergkäse mit geschützter Ursprungs-bezeichnung (g.U.) wird in kleinen Bergsennereien aus unbehandelter Heumilch erzeugt. </p>
-                    </div>
-                    <div class="text-right">
-                      <button class="btn btn-success btn-lg">› *schenk*</button>
+                  <div class="col-sm-4 col-md-4 col-lg-12">
+                    <div class="bar-block">
+                      <div class="bar-block-header">
+                        <div class="bar-block-header-title">Verschenken Sie uns</div>
+                      </div>
+                      <div class="bar-block-in">
+                        <div class="bar-block-media"><img src="img/media11.png" alt=""></div>
+                        <div class="bar-block-content">
+                          <p>Der Alma Vorarlberger Bergkäse mit geschützter Ursprungs-bezeichnung (g.U.) wird in kleinen Bergsennereien aus unbehandelter Heumilch erzeugt. </p>
+                        </div>
+                        <div class="text-right">
+                          <button class="btn btn-success btn-lg">› *schenk*</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -243,12 +260,12 @@
       <footer class="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-xs-6">
+            <div class="col-md-12 col-lg-9">
               <div class="row">
-                <div class="col-md-6 col-xs-6">
+                <div class="col-lg-4 col-md-4 col-xs-12">
                   <div class="list">
                     <div class="list-title">Alma</div>
-                    <ul class="list-ul">
+                    <ul class="list-ul m-addr">
                       <li class="list-item"><span class="list-link">Krüzastraße 8</span></li>
                       <li class="list-item"><span class="list-link">A-6912 Hörbranz</span></li>
                       <li class="list-item"><span class="list-link">T +43 5573 8080</span></li>
@@ -257,7 +274,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-6 col-xs-6">
+                <div class="col-lg-4 col-md-4 col-xs-12">
                   <div class="list">
                     <div class="list-title">Informationen</div>
                     <ul class="list-ul">
@@ -269,11 +286,7 @@
                     </ul>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xs-6">
-              <div class="row">
-                <div class="col-md-6 col-xs-6">
+                <div class="col-lg-4 col-md-4 col-xs-12">
                   <div class="list">
                     <div class="list-title">Mein Konto</div>
                     <ul class="list-ul">
@@ -284,16 +297,28 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-6 col-xs-6">
-                  <div class="list">
-                    <div class="list-title">Follow us on</div>
-                    <div class="list-social"><a href="#" class="list-social-fb"></a><a href="#" class="list-social-gp"></a><a href="#" class="list-social-yt"></a></div>
-                    <div class="list-title">Newsletter</div>
-                    <div class="list-row">
-                      <input type="email" placeholder="eMail-Adresse" class="form-control my-input">
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+              <div class="row">
+                <div class="col-md-12 col-xs-12">
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-12">
+                      <div class="list">
+                        <div class="list-title">Follow us on</div>
+                        <div class="list-social"><a href="#" class="list-social-fb"></a><a href="#" class="list-social-gp"></a><a href="#" class="list-social-yt"></a></div>
+                      </div>
                     </div>
-                    <div class="text-right">
-                      <button class="btn btn-gray btn-xs">› Anmelden</button>
+                    <div class="col-sm-4 col-md-4 col-lg-12">
+                      <div class="list m-border">
+                        <div class="list-title">Newsletter</div>
+                        <div class="list-row">
+                          <input type="email" placeholder="eMail-Adresse" class="form-control my-input">
+                        </div>
+                        <div class="text-right">
+                          <button class="btn btn-gray btn-xs">› Anmelden</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -11,20 +11,31 @@ $blue: #5381AB
 // Common blocks
 body
 	font-size: 14px
-	font-family: Georgia, serif
+	font-family: Georgia, serif 
 	line-height: 1.4
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: antialiased
 .out
-	min-width: 1170px 
+	min-width: 1170px
+	+r(w1170)
+		min-width: 100%
 %wrap
-	width: 1070px
+	width: 1170px
 	margin: 0 auto
+	+r(w1170)
+		width: 100%
 .wrap
-	width: 1070px
+	width: 1170px
 	margin: 0 auto
-.container
-	width: 1170px !important
+	+r(w1170)
+		width: 100%
+.hide-768
+	display: block
+	+r(w768)
+		display: none !important
+// .container
+// 	width: 1170px !important
+
 // Headings
 // --------------------------------------------------
 
@@ -38,22 +49,53 @@ body
 	font-size: 20px
 	font-weight: bold
 	color: $green
+	+r(w768)
+		padding: 5px 0 10px
+		font-size: 20px
+		text-align: center
 .topper
+	padding: 15px 0 10px
 	position: relative
 	z-index: 999
 	background: #fff
 	+box-shadow(0 4px 2px rgba(#000, .2))
+	+r(w768)
+		width: 100%
+		position: absolute
+	&.is-active
+		+r(w768)
+			.topper-arr
+				+arr(14,7,#5482AB,bottom)
+	.topper-arr
+		+arr(14,7,#5482AB,top)
+		position: absolute
+		left: 50%
+		margin-left: -7px
+		bottom: 10px
+		cursor: pointer
+		display: none
+		+r(w768)
+			display: block
 .subnav
 	padding: 25px 0 20px
 	text-align: right
+	+r(w768)
+		padding: 0 0 25px
+		text-align: center
 	.subnav-list
 		display: inline-block
 		padding: 0 40px
+		margin: 0
 		list-style: none
 		+clr
+		+r(w1170)
+			padding: 0
 	.subnav-item
 		float: left
 		margin-left: 20px
+		+r(w768)
+			width: 50%
+			margin-left: 0
 		&:first-child
 			margin-left: 0
 	.subnav-link
@@ -78,6 +120,8 @@ body
 		position: absolute
 		top: 50px
 		left: 0
+		+r(w768)
+			display: none
 	.header-in
 		height: 212px
 		position: relative
@@ -88,9 +132,21 @@ body
 	position: absolute
 	bottom: 20px
 	right: 0
+	+r(w1023)
+		display: none
 	&.m-nav
 		display: none
 		bottom: 33px
+		+r(w1280)
+			right: 16px
+			.basket-right
+				display: none
+			.basket-left
+				+border-radius(5px)
+		+r(w1023)
+			display: block
+			bottom: auto
+			top: 4px
 	.basket-left
 		display: inline-block
 		vertical-align: top
@@ -118,14 +174,23 @@ body
 		margin-top: -10px
 		left: 50%
 		margin-left: -12px 
-
+.mobile-cheese
+	display: none
+	+r(w768)
+		+s(i-cheese)
+		display: block
+		position: absolute
+		top: 4px
+		right: 65px
 .nav
-	min-width: 1170px 
+	// min-width: 1170px 
 	height: 55px
 	line-height: 66px
 	background: #5482AB
 	+box-shadow(0 4px 2px rgba(#000, .2))
-	position: relative
+	position: absolute
+	left: 0
+	right: 0
 	z-index: 999
 	+transition(all linear 0.3s)
 	// +transition(all linear 0.3s)
@@ -144,18 +209,22 @@ body
 		-webkit-transform: translate3d(0px, 0%, 0px)
 		transform: translate3d(0px, 0%, 0px)
 		opacity: 1
+		+r(w768)
+			position: absolute
 		.nav-logo
 			display: block
 		.basket
 			&.m-nav
 				display: block
 				right: -34px
+				+r(w1280)
+					right: 16px
 	.nav-in
 		position: relative
 		@extend %wrap
 		padding: 0 15px
-	// .container
-	// 	position: relative
+		+r(w1023)
+			padding: 0
 	.nav-logo
 		display: none
 		position: absolute
@@ -163,13 +232,51 @@ body
 		left: 40px
 		z-index: 666
 		+s(logo2)
+		+r(w1280)
+			left: 0
 	.nav-list
 		padding-left: 190px
 		margin: 0
 		+clr
 		list-style: none
+		+r(w1024)
+			padding-left: 150px
+		+r(w1023)
+			padding-left: 120px
+		+r(w768)
+			display: none
+			padding-left: 0
+			margin: 0 -15px
+			background: #5482AB
+			+box-shadow(inset 0px 3px 10px rgba(#000, .2))
+	.nav-mobile
+		display: none
+		width: 115px
+		height: 63px
+		margin-top: -3px
+		cursor: pointer
+		font-size: 16px
+		color: #fff
+		+r(w768)
+			display: block
+		.nav-mobile-ico
+			+s(nav-ico)
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+		.nav-mobile-title
+			display: inline-block
+			vertical-align: middle
 	.nav-item
 		float: left
+		+r(w768)
+			float: none
+			margin: 0 15px
+			border-bottom: 1px solid #7EAADB
+			&:first-child
+				border-bottom: none
+			&:last-child
+				border-bottom: none
 	.nav-link
 		display: block
 		padding: 0 20px
@@ -180,13 +287,30 @@ body
 		text-transform: uppercase
 		position: relative
 		z-index: 666
+		+r(w768)
+			padding-left: 40px
+			&:before
+				content: ""
+				+s(nav-arr)
+				position: absolute
+				left: 20px
+				top: 50%
+				margin-top: -4px
 		&.is-active
 			height: 87px
 			background: url("../img/icons/nav.png")
 			background-size: 100% 100%
+			+r(w1023)
+				font-size: 0
+				width: 56px
+				height: 44px
+				background: url("../img/icons/i-cheese.png")
+				margin-top: 6px
 			&:before, &:after
 				content: ""
 				position: absolute
+				+r(w1023)
+					content: none
 			&:before
 				+s(nav-ico1)
 				bottom: 25px
@@ -226,7 +350,9 @@ body
 .prod
 	margin-bottom: 70px
 	background: #fff
-	border-bottom: 1px solid #5482AB 
+	border-bottom: 1px solid #5482AB
+	+r(w768)
+		margin-bottom: 30px
 	.prod-media
 		margin-bottom: 25px
 		position: relative
@@ -237,17 +363,25 @@ body
 			bottom: -14px
 			left: 0
 			right: 0
-			background: url("../img/shadow.png") 
+			background: url("../img/shadow.png")
+			+r(w768)
+				content: none
+			+r(w360)
+				content: ""
 		img
 			max-width: 100%
 			position: relative
+			+r(w768)
+				width: 100%
 	.prod-title
 		margin-bottom: 15px
+		padding: 0 5px
 		font-size: 22px
 		font-weight: bold
 		font-style: italic
 		color: #5280AB 
 	.prod-content
+		padding: 0 5px
 		p
 			overflow: hidden
 			line-height: 1.8  
@@ -263,6 +397,12 @@ body
 
 .list
 	margin: 0
+	+r(w768)
+		margin-bottom: 15px
+		border-bottom: 1px solid #7EAADB
+		text-align: center
+	&.m-border
+		border-bottom: 0 
 	.list-title
 		margin-bottom: 15px
 		font-size: 20px
@@ -271,6 +411,13 @@ body
 	.list-ul
 		padding: 0
 		list-style: none
+		+r(w768)
+			&.m-addr
+				font-size: 0
+				li
+					width: 50%
+					display: inline-block
+					font-size: 14px
 	.list-item
 		margin: 0 0 5px
 		&.m-spesial
@@ -319,6 +466,8 @@ body
 		font-size: 20px
 		color: #5280AB
 		font-style: italic
+		+r(w768)
+			text-align: center
 	.pay-list
 		padding: 0
 		+clr
@@ -346,10 +495,19 @@ body
 	position: absolute
 	top: -20px
 	right: 40px
+	+r(w1280)
+		top: auto
+		bottom: 34px
+		right: 32px
+	+r(w768)
+		right: 50%
+		margin-right: -20px
+		bottom: 88px
 	
 .page
 	padding: 100px 0 120px
-
+	+r(w768)
+		padding-bottom: 0px
 .step
 	padding: 20px 60px 10px
 	margin-bottom: 40px
@@ -363,6 +521,12 @@ body
 	.step-item
 		text-align: center
 		position: relative
+		+r(w768)
+			margin-bottom: 30px
+		&.m-mod
+			&:after
+				+r(w768)
+					content: none
 		&:before
 			content: ""
 			position: absolute
@@ -370,6 +534,15 @@ body
 			top: 50%
 			margin-top: -10px
 			+s(arr1)
+		&:after
+			content: none
+			position: absolute
+			right: 10px
+			top: 50%
+			margin-top: -10px
+			+s(arr1)
+			+r(w768)
+				content: ""
 	.step-item-media
 		height: 100px
 		margin-bottom: 10px
@@ -380,7 +553,10 @@ body
 
 .spesial
 	margin-bottom: 60px
-	border-bottom: 1px solid #5482AB  
+	border-bottom: 1px solid #5482AB
+	position: relative
+	.col-xs-4
+		position: static
 	.spesial-descr
 		padding-top: 50px
 		padding-left: 60px
@@ -394,9 +570,27 @@ body
 		margin-bottom: 30px
 		color: #5280AB
 		font-size: 18px
+		+r(w768)
+			margin-bottom: 20px
+		.btn-success
+			+r(w768)
+			position: relative
+			z-index: 11
+		
 	.spesial-media
 		margin-bottom: -6px
-
+		width: 229px
+		height: 281px
+		display: inline-block
+		background: url("../img/img1.png")
+		+r(w768)
+			width: 155px
+			height: 190px
+			background: url("../img/img1_sm.png")
+			margin-bottom: 0
+			position: absolute
+			bottom: 0
+			right: 0
 .gallery
 	.gallery-in
 		padding-bottom: 25px
@@ -445,7 +639,7 @@ body
 		color: #5280AB 
 	.bar-block
 		margin-bottom: 30px
-		background: #fff 
+		background: #fff
 	.bar-block-header
 		background: #5482AB
 		color: #fff
@@ -485,6 +679,8 @@ body
 		.arr
 			position: absolute
 			top: 5px
+			top: 50%
+			margin-top: -10px
 			right: -17px
 		.bar-block-row-label
 			padding: 5px 60px 5px 20px
@@ -492,12 +688,16 @@ body
 			border-radius: 5px
 			position: relative
 			.pen
-				top: 8px
+				// top: 8px
+				top: 50%
+				margin-top: -7px
 				right: 25px
 				position: absolute
 			.cross
 				right: 5px
 				top: 8px
+				top: 50%
+				margin-top: -7px
 				position: absolute
 	.bar-block-content
 		text-align: left
@@ -525,6 +725,8 @@ body
 	width: 180px
 	margin: 0 auto 15px
 	position: relative
+	+r(w1170)
+		width: 100%
 	.minislide-item
 		width: 100%
 		margin: 0
@@ -536,6 +738,8 @@ body
 		top: 50%
 		margin-top: -10px
 		cursor: pointer
+		+r(w1170)
+			left: -11px
 	.minislide-next
 		+s(arr1)
 		position: absolute
@@ -544,6 +748,8 @@ body
 		top: 50%
 		margin-top: -10px
 		cursor: pointer
+		+r(w1170)
+			right: -11px
 
 .btn-lg
 	font-size: 22px
