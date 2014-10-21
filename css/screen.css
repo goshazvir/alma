@@ -2204,7 +2204,7 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 @media only screen and (max-width: 768px) { .spesial .spesial-content { margin-bottom: 20px; } }
 .spesial .spesial-content .btn-success { position: relative; z-index: 11; }
 .spesial .spesial-media { margin-bottom: -6px; width: 229px; height: 281px; display: inline-block; background: url("../img/img1.png"); }
-@media only screen and (max-width: 768px) { .spesial .spesial-media { width: 155px; height: 190px; background: url("../img/img1_sm.png"); margin-bottom: 0; position: absolute; bottom: 0; right: 0; } }
+@media only screen and (max-width: 768px) { .spesial .spesial-media { width: 155px; height: 190px; background: url("../img/img1_sm.png"); margin-bottom: 0; position: absolute; bottom: 0; right: -12px; } }
 
 .gallery .gallery-in { padding-bottom: 25px; margin-bottom: 15px; border-bottom: 1px solid #5482ab; position: relative; }
 .gallery .h2 { margin-top: 0; margin-bottom: 10px; font-size: 24px; font-style: italic; color: #5280ab; }
