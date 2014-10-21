@@ -511,7 +511,9 @@ body
 .step
 	padding: 20px 60px 10px
 	margin-bottom: 40px
-	background: #F3F7F8 
+	background: #F3F7F8
+	+r(w768)
+		margin-bottom: 30px
 	.step-title
 		margin-bottom: 15px
 		font-size: 28px
@@ -574,6 +576,7 @@ body
 		font-size: 18px
 		+r(w768)
 			margin-bottom: 20px
+			font-size: 16px
 		.btn-success
 			+r(w768)
 			position: relative
@@ -593,6 +596,7 @@ body
 			position: absolute
 			bottom: 0
 			right: -12px
+			z-index: 100
 .gallery
 	.gallery-in
 		padding-bottom: 25px

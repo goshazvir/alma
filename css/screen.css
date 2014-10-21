@@ -2185,6 +2185,7 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 @media only screen and (max-width: 768px) { .page { padding-bottom: 0px; } }
 
 .step { padding: 20px 60px 10px; margin-bottom: 40px; background: #f3f7f8; }
+@media only screen and (max-width: 768px) { .step { margin-bottom: 30px; } }
 .step .step-title { margin-bottom: 15px; font-size: 28px; font-weight: normal; color: #5280ab; text-align: center; }
 .step .step-item { text-align: center; position: relative; }
 @media only screen and (max-width: 768px) { .step .step-item { margin-bottom: 30px; } }
@@ -2201,10 +2202,10 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 @media only screen and (max-width: 768px) { .spesial .spesial-descr { padding: 0; } }
 .spesial .spesial-title { margin-bottom: 25px; font-size: 24px; color: #5280ab; font-weight: normal; font-style: italic; }
 .spesial .spesial-content { margin-bottom: 30px; color: #5280ab; font-size: 18px; }
-@media only screen and (max-width: 768px) { .spesial .spesial-content { margin-bottom: 20px; } }
+@media only screen and (max-width: 768px) { .spesial .spesial-content { margin-bottom: 20px; font-size: 16px; } }
 .spesial .spesial-content .btn-success { position: relative; z-index: 11; }
 .spesial .spesial-media { margin-bottom: -6px; width: 229px; height: 281px; display: inline-block; background: url("../img/img1.png"); }
-@media only screen and (max-width: 768px) { .spesial .spesial-media { width: 155px; height: 190px; background: url("../img/img1_sm.png"); margin-bottom: 0; position: absolute; bottom: 0; right: -12px; } }
+@media only screen and (max-width: 768px) { .spesial .spesial-media { width: 155px; height: 190px; background: url("../img/img1_sm.png"); margin-bottom: 0; position: absolute; bottom: 0; right: -12px; z-index: 100; } }
 
 .gallery .gallery-in { padding-bottom: 25px; margin-bottom: 15px; border-bottom: 1px solid #5482ab; position: relative; }
 .gallery .h2 { margin-top: 0; margin-bottom: 10px; font-size: 24px; font-style: italic; color: #5280ab; }
