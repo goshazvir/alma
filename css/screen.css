@@ -2198,6 +2198,7 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 .spesial { margin-bottom: 60px; border-bottom: 1px solid #5482ab; position: relative; }
 .spesial .col-xs-4 { position: static; }
 .spesial .spesial-descr { padding-top: 50px; padding-left: 60px; }
+@media only screen and (max-width: 768px) { .spesial .spesial-descr { padding: 0; } }
 .spesial .spesial-title { margin-bottom: 25px; font-size: 24px; color: #5280ab; font-weight: normal; font-style: italic; }
 .spesial .spesial-content { margin-bottom: 30px; color: #5280ab; font-size: 18px; }
 @media only screen and (max-width: 768px) { .spesial .spesial-content { margin-bottom: 20px; } }
