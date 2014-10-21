@@ -2124,11 +2124,11 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 .prod { margin-bottom: 70px; background: white; border-bottom: 1px solid #5482ab; }
 @media only screen and (max-width: 768px) { .prod { margin-bottom: 30px; } }
 .prod .prod-media { margin-bottom: 25px; position: relative; }
-.prod .prod-media:before { content: ""; height: 28px; position: absolute; bottom: -14px; left: 0; right: 0; background: url("../img/shadow.png"); }
-@media only screen and (max-width: 768px) { .prod .prod-media:before { content: none; } }
+.prod .prod-media:before { content: ""; height: 28px; position: absolute; bottom: -14px; left: 0; right: 0; background: url("../img/shadow.png") 0 0 no-repeat; }
+@media only screen and (max-width: 1024px) { .prod .prod-media:before { content: none; } }
 @media only screen and (max-width: 360px) { .prod .prod-media:before { content: ""; } }
 .prod .prod-media img { max-width: 100%; position: relative; }
-@media only screen and (max-width: 768px) { .prod .prod-media img { width: 100%; } }
+@media only screen and (max-width: 1199px) { .prod .prod-media img { width: 100%; } }
 .prod .prod-title { margin-bottom: 15px; padding: 0 5px; font-size: 22px; font-weight: bold; font-style: italic; color: #5280ab; }
 .prod .prod-content { padding: 0 5px; }
 .prod .prod-content p { overflow: hidden; line-height: 1.8; color: #527fab; }
