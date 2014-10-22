@@ -2067,7 +2067,7 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 
 .header .header-bg { height: 212px; background: url("../img/header1.png"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; }
 .header .header-bg:before { content: ""; width: 417px; height: 229px; position: absolute; right: 0; bottom: 0; background: url("../img/header2.png"); }
-.header .header-logo { background: url('../img/icons-s3f4e7aa620.png') 0 -285px no-repeat; width: 194px; height: 127px; position: absolute; top: 50px; left: 0; }
+.header .header-logo { position: absolute; top: 50px; left: 0; }
 @media only screen and (max-width: 768px) { .header .header-logo { display: none; } }
 .header .header-in { height: 212px; position: relative; }
 
@@ -2094,7 +2094,7 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 @media only screen and (max-width: 1280px) { .nav.is-fixed .basket.m-nav { right: 16px; } }
 .nav .nav-in { position: relative; padding: 0 15px; }
 @media only screen and (max-width: 1023px) { .nav .nav-in { padding: 0; } }
-.nav .nav-logo { display: none; position: absolute; top: 0; left: 40px; z-index: 666; background: url('../img/icons-s3f4e7aa620.png') 0 -422px no-repeat; width: 108px; height: 71px; }
+.nav .nav-logo { display: none; position: absolute; top: 0; left: 40px; z-index: 666; }
 @media only screen and (max-width: 1280px) { .nav .nav-logo { left: 0; } }
 .nav .nav-list { padding-left: 190px; margin: 0; *zoom: 1; list-style: none; }
 .nav .nav-list:after { content: " "; display: table; clear: both; }
@@ -2132,7 +2132,9 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 .page .page-in .h1 { margin-bottom: 20px; font-size: 28px; color: #527fab; font-style: italic; }
 
 .prod { margin-bottom: 70px; background: white; border-bottom: 1px solid #5482ab; height: 635px; overflow: hidden; }
-@media only screen and (max-width: 1187px) { .prod { margin-bottom: 30px; height: auto; } }
+@media only screen and (max-width: 1199px) { .prod { height: 655px; } }
+@media only screen and (max-width: 1023px) { .prod { height: 710px; margin-bottom: 30px; } }
+@media only screen and (max-width: 768px) { .prod { height: auto; } }
 .prod .prod-media { margin-bottom: 25px; position: relative; }
 .prod .prod-media:before { content: ""; height: 28px; position: absolute; bottom: -14px; left: 0; right: 0; background: url("../img/shadow.png") 0 0 no-repeat; }
 @media only screen and (max-width: 1024px) { .prod .prod-media:before { content: none; } }

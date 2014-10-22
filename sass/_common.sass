@@ -149,7 +149,7 @@ body
 			bottom: 0
 			background: url("../img/header2.png") 
 	.header-logo
-		+s(logo)
+		// +s(logo)
 		position: absolute
 		top: 50px
 		left: 0
@@ -264,7 +264,7 @@ body
 		top: 0
 		left: 40px
 		z-index: 666
-		+s(logo2)
+		// +s(logo2)
 		+r(w1280)
 			left: 0
 	.nav-list
@@ -389,8 +389,12 @@ body
 	border-bottom: 1px solid #5482AB
 	height: 635px
 	overflow: hidden
-	+r(w1170)
+	+r(w1199)
+		height: 655px
+	+r(w1023)
+		height: 710px
 		margin-bottom: 30px
+	+r(w768)
 		height: auto
 	.prod-media
 		margin-bottom: 25px
