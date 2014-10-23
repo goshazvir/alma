@@ -807,6 +807,64 @@ body
 	border-color: transparent
 	&:hover, &:focus, &:active
 		border-color: transparent 
+		
+.slider
+	height: 370px
+	overflow: hidden
+	.slider-in
+		position: relative
+	.slider-items
+		overflow: hidden
+		padding: 0
+		margin: 0
+	.slider-item
+		+clr
+		.slider-item-left
+			width: 20%
+			height: 370px
+			float: left
+			.slider-item-left-img
+				height: 100%
+				+cover
+		.slider-item-right
+			width: 20%
+			height: 370px
+			float: left
+			.slider-item-right-img
+				height: 100%
+				+cover
+		.slider-item-content
+			width: 60%
+			padding: 50px 200px 50px 40px
+			height: 370px
+			float: left
+			+g3(#c6c6c6, #fff, #fff)
+			p
+				overflow: hidden
+				font-size: 18px
+				color: #527FAB 
+			a
+				float: right
+					font-size: 18px
+				color: #729600 
+		.slider-item-title
+			margin-top: 15px
+			margin-bottom: 25px
+			font-size: 28px
+			color: #527FAB
+	.slider-prev
+		+s(left)
+		position: absolute
+		top: 85px
+		right: 27%
+		cursor: pointer
+	.slider-next
+		+s(right)
+		position: absolute
+		top: 140px
+		right: 27%
+		cursor: pointer
+
 // 
 // --------------------------------------------------
 // 

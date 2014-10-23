@@ -2264,3 +2264,19 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 
 .btn-lg, .btn-group-lg > .btn { font-size: 22px; font-style: italic; padding: 4px 35px; border-color: transparent; }
 .btn-lg:hover, .btn-group-lg > .btn:hover, .btn-lg:focus, .btn-group-lg > .btn:focus, .btn-lg:active, .btn-group-lg > .btn:active { border-color: transparent; }
+
+.slider { height: 370px; overflow: hidden; }
+.slider .slider-in { position: relative; }
+.slider .slider-items { overflow: hidden; padding: 0; margin: 0; }
+.slider .slider-item { *zoom: 1; }
+.slider .slider-item:after { content: " "; display: table; clear: both; }
+.slider .slider-item .slider-item-left { width: 20%; height: 370px; float: left; }
+.slider .slider-item .slider-item-left .slider-item-left-img { height: 100%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.slider .slider-item .slider-item-right { width: 20%; height: 370px; float: left; }
+.slider .slider-item .slider-item-right .slider-item-right-img { height: 100%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.slider .slider-item .slider-item-content { width: 60%; padding: 50px 200px 50px 40px; height: 370px; float: left; background-image: -moz-linear-gradient(#c6c6c6, #ffffff, #ffffff); background-image: -webkit-linear-gradient(#c6c6c6, #ffffff, #ffffff); background-image: linear-gradient(#c6c6c6, #ffffff, #ffffff); }
+.slider .slider-item .slider-item-content p { overflow: hidden; font-size: 18px; color: #527fab; }
+.slider .slider-item .slider-item-content a { float: right; float-font-size: 18px; color: #729600; }
+.slider .slider-item .slider-item-title { margin-top: 15px; margin-bottom: 25px; font-size: 28px; color: #527fab; }
+.slider .slider-prev { background: url('../img/icons-s3f4e7aa620.png') 0 -235px no-repeat; width: 40px; height: 40px; position: absolute; top: 85px; right: 27%; cursor: pointer; }
+.slider .slider-next { background: url('../img/icons-s3f4e7aa620.png') 0 -899px no-repeat; width: 40px; height: 40px; position: absolute; top: 140px; right: 27%; cursor: pointer; }
