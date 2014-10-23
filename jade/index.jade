@@ -30,7 +30,8 @@ html
             .row
               .col-md-12.col-xs-12
                 .header-in
-                  a(href="#").header-logo
+                  a(href="#")
+                    img(src="img/icons/logo.png", alt="").header-logo
                   a(href="#").basket
                     span.basket-left
                       i.basket-ico
@@ -40,7 +41,8 @@ html
             .container
               .row
                 .col-md-12.col-xs-12
-                  a(href="#").nav-logo
+                  a(href="#")
+                    img(src="img/icons/logo2.png", alt="").nav-logo
                   .nav-wrap-list
                     .nav-mobile.js-navmobile
                       .nav-mobile-ico
@@ -50,6 +52,15 @@ html
                         a(href="#").nav-link.is-active.hide-768 KÄSE KAUFEN
                       li.nav-item
                         a(href="#").nav-link SENNEREIEN
+                        ul.dropdown
+                          li.dropdown-item
+                            a(href="#").dropdown-link Mein Konto
+                          li.dropdown-item
+                            a(href="#").dropdown-link Mein Konto
+                          li.dropdown-item
+                            a(href="#").dropdown-link Mein Konto
+                          li.dropdown-item
+                            a(href="#").dropdown-link Mein Konto
                       li.nav-item
                         a(href="#").nav-link INFORMATIONEN
                       li.nav-item
@@ -64,13 +75,21 @@ html
             .col-md-12.col-lg-12.col-sm-12
               .slider
                 .slider-in
-                  #carousel-example-generic.carousel.slide.carousel-fade(data-ride='carousel')
-                    ol.carousel-indicators
-                      li.active(data-target='#carousel-example-generic', data-slide-to='0')
-                      li(data-target='#carousel-example-generic', data-slide-to='1')
-                    .carousel-inner
-                      .item.active(style="background-image: url(img/bg.jpg)")
-                      .item(style="background-image: url(img/bg.jpg)")
+                  ul.slider-items
+                    li.slider-item
+                      .slider-item-left
+                        .slider-item-left-img(style='background-image: url(img/slide1.jpg);')
+                      .slider-item-content
+                        .slider-item-title Lorem ipsum dolor sit amet
+                        p
+                          | Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. 
+                          a(href="#") › mehr
+                      .slider-item-right
+                        .slider-item-right-img(style='background-image: url(img/slide2.jpg);')
+                  .slider-prev
+                  .slider-next
+
+
       .page
         .container
           .row

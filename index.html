@@ -39,7 +39,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12 col-xs-12">
-                <div class="header-in"><a href="#" class="header-logo"></a><a href="#" class="basket"><span class="basket-left"><i class="basket-ico"></i></span><span class="basket-right">Warenkorb</span></a></div>
+                <div class="header-in"><a href="#"><img src="img/icons/logo.png" alt="" class="header-logo"></a><a href="#" class="basket"><span class="basket-left"><i class="basket-ico"></i></span><span class="basket-right">Warenkorb</span></a></div>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@
           <div class="nav-in">
             <div class="container">
               <div class="row">
-                <div class="col-md-12 col-xs-12"><a href="#" class="nav-logo"></a>
+                <div class="col-md-12 col-xs-12"><a href="#"><img src="img/icons/logo2.png" alt="" class="nav-logo"></a>
                   <div class="nav-wrap-list">
                     <div class="nav-mobile js-navmobile">
                       <div class="nav-mobile-ico"></div>
@@ -56,7 +56,14 @@
                     </div>
                     <ul class="nav-list">
                       <li class="nav-item"><a href="#" class="nav-link is-active hide-768">KÄSE KAUFEN</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link">SENNEREIEN</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">SENNEREIEN</a>
+                        <ul class="dropdown">
+                          <li class="dropdown-item"><a href="#" class="dropdown-link">Mein Konto</a></li>
+                          <li class="dropdown-item"><a href="#" class="dropdown-link">Mein Konto</a></li>
+                          <li class="dropdown-item"><a href="#" class="dropdown-link">Mein Konto</a></li>
+                          <li class="dropdown-item"><a href="#" class="dropdown-link">Mein Konto</a></li>
+                        </ul>
+                      </li>
                       <li class="nav-item"><a href="#" class="nav-link">INFORMATIONEN</a></li>
                       <li class="nav-item"><a href="#" class="nav-link"> ÜBER UNS</a></li>
                     </ul>
@@ -71,16 +78,22 @@
             <div class="col-md-12 col-lg-12 col-sm-12">
               <div class="slider">
                 <div class="slider-in">
-                  <div id="carousel-example-generic" data-ride="carousel" class="carousel slide carousel-fade">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div style="background-image: url(img/bg.jpg)" class="item active"></div>
-                      <div style="background-image: url(img/bg.jpg)" class="item"></div>
-                    </div>
-                  </div>
+                  <ul class="slider-items">
+                    <li class="slider-item">
+                      <div class="slider-item-left">
+                        <div style="background-image: url(img/slide1.jpg);" class="slider-item-left-img"></div>
+                      </div>
+                      <div class="slider-item-content">
+                        <div class="slider-item-title">Lorem ipsum dolor sit amet</div>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. <a href="#">› mehr</a></p>
+                      </div>
+                      <div class="slider-item-right">
+                        <div style="background-image: url(img/slide2.jpg);" class="slider-item-right-img"></div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="slider-prev"></div>
+                  <div class="slider-next"></div>
                 </div>
               </div>
             </div>

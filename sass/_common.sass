@@ -82,24 +82,57 @@ body
 	+r(w768)
 		padding: 0 0 25px
 		text-align: center
-	.subnav-list
-		display: inline-block
-		padding: 0 40px
-		margin: 0
-		list-style: none
-		+clr
-		+r(w1170)
-			padding: 0
-	.subnav-item
-		float: left
-		margin-left: 20px
+
+.subnav-list
+	display: inline-block
+	padding: 0 40px
+	margin: 0
+	list-style: none
+	+clr
+	+r(w1170)
+		padding: 0
+.subnav-item
+	float: left
+	margin-left: 20px
+	position: relative
+	+r(w768)
+		width: 50%
+		margin-left: 0
+	&:first-child
+		margin-left: 0
+.subnav-link
+	color: $blue
+
+.dropdown
+	display: none
+	min-width: 200px
+	padding: 0
+	background: #5482AB
+	list-style: none
+	position: absolute
+	top: 0
+	margin-top: 55px
+	+r(w768)
+		position: static
+		margin-top: 0
+		padding-left: 40px
+	.dropdown-link
+		padding-left: 20px
+		padding-right: 20px
+		display: block
+		font-size: 16px
+		font-weight: bold
+		color: white
+		text-transform: uppercase
 		+r(w768)
-			width: 50%
-			margin-left: 0
-		&:first-child
-			margin-left: 0
-	.subnav-link
-		color: $blue
+			position: relative
+			&:before
+				content: ""
+				+s(nav-arr)
+				position: absolute
+				left: 0px
+				top: 50%
+				margin-top: -4px
 
 .header
 	.header-bg
@@ -116,7 +149,7 @@ body
 			bottom: 0
 			background: url("../img/header2.png") 
 	.header-logo
-		+s(logo)
+		// +s(logo)
 		position: absolute
 		top: 50px
 		left: 0
@@ -231,7 +264,7 @@ body
 		top: 0
 		left: 40px
 		z-index: 666
-		+s(logo2)
+		// +s(logo2)
 		+r(w1280)
 			left: 0
 	.nav-list
@@ -269,6 +302,9 @@ body
 			vertical-align: middle
 	.nav-item
 		float: left
+		&:hover
+			.dropdown
+				display: block
 		+r(w768)
 			float: none
 			margin: 0 15px
@@ -351,8 +387,15 @@ body
 	margin-bottom: 70px
 	background: #fff
 	border-bottom: 1px solid #5482AB
-	+r(w768)
+	height: 635px
+	overflow: hidden
+	+r(w1199)
+		height: 655px
+	+r(w1023)
+		height: 710px
 		margin-bottom: 30px
+	+r(w768)
+		height: auto
 	.prod-media
 		margin-bottom: 25px
 		position: relative
@@ -764,6 +807,64 @@ body
 	border-color: transparent
 	&:hover, &:focus, &:active
 		border-color: transparent 
+		
+.slider
+	height: 370px
+	overflow: hidden
+	.slider-in
+		position: relative
+	.slider-items
+		overflow: hidden
+		padding: 0
+		margin: 0
+	.slider-item
+		+clr
+		.slider-item-left
+			width: 20%
+			height: 370px
+			float: left
+			.slider-item-left-img
+				height: 100%
+				+cover
+		.slider-item-right
+			width: 20%
+			height: 370px
+			float: left
+			.slider-item-right-img
+				height: 100%
+				+cover
+		.slider-item-content
+			width: 60%
+			padding: 50px 200px 50px 40px
+			height: 370px
+			float: left
+			+g3(#c6c6c6, #fff, #fff)
+			p
+				overflow: hidden
+				font-size: 18px
+				color: #527FAB 
+			a
+				float: right
+					font-size: 18px
+				color: #729600 
+		.slider-item-title
+			margin-top: 15px
+			margin-bottom: 25px
+			font-size: 28px
+			color: #527FAB
+	.slider-prev
+		+s(left)
+		position: absolute
+		top: 85px
+		right: 27%
+		cursor: pointer
+	.slider-next
+		+s(right)
+		position: absolute
+		top: 140px
+		right: 27%
+		cursor: pointer
+
 // 
 // --------------------------------------------------
 // 
