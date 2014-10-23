@@ -823,6 +823,8 @@ body
 			width: 20%
 			height: 370px
 			float: left
+			+r(w768)
+				width: 100%
 			.slider-item-left-img
 				height: 100%
 				+cover
@@ -830,6 +832,8 @@ body
 			width: 20%
 			height: 370px
 			float: left
+			+r(w768)
+				width: 0
 			.slider-item-right-img
 				height: 100%
 				+cover
@@ -839,10 +843,14 @@ body
 			height: 370px
 			float: left
 			+g3(#c6c6c6, #fff, #fff)
+			+r(w768)
+				width: 0
 			p
 				overflow: hidden
 				font-size: 18px
-				color: #527FAB 
+				color: #527FAB
+				+r(w1023)
+					font-size: 14px
 			a
 				float: right
 					font-size: 18px
