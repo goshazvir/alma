@@ -8,24 +8,24 @@ head.ready(function() {
 	    return false;
 		});
 
-		$('.js-flexslider').flexslider({
-			namespace: ".gallery-",
+		$('.slider').flexslider({
+			namespace: ".slider-",
 			smoothHeight: true,
 			animation: "slide",
-			selector: ".js-flexslider-in > .gallery-item",
+			selector: ".slider-items > .slider-item",
 			directionNav: false,
 			// controlsContainer: ".slider",
 			useCSS: false,
 			controlNav: false,
 			slideshow: false
 		});
-		$('.gallery-prev').on('click', function(){
-		    $('.js-flexslider').flexslider('prev')
+		$('.slider-prev').on('click', function(){
+		    $('.slider').flexslider('prev')
 		    return false;
 		})
 
-		$('.gallery-next').on('click', function(){
-		    $('.js-flexslider').flexslider('next')
+		$('.slider-next').on('click', function(){
+		    $('.slider').flexslider('next')
 		    return false;
 		})
 
