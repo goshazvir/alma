@@ -45,7 +45,7 @@ body
 // Header
 // --------------------------------------------------
 .telephone
-	padding: 25px 0 20px
+	padding: 5px 0 10px
 	font-size: 20px
 	font-weight: bold
 	color: $green
@@ -54,7 +54,7 @@ body
 		font-size: 20px
 		text-align: center
 .topper
-	padding: 15px 0 10px
+	padding: 10px 0
 	position: relative
 	z-index: 999
 	background: #fff
@@ -77,7 +77,7 @@ body
 		+r(w768)
 			display: block
 .subnav
-	padding: 25px 0 20px
+	padding: 10px 0 5px
 	text-align: right
 	+r(w768)
 		padding: 0 0 25px
@@ -360,8 +360,9 @@ body
 	padding: 0 15px
 .slider
 	margin: 0 -15px
+	background: url("../img/texture.png") 0 0 repeat
 	.slider-in
-		margin: 0
+		margin: 100px 0 0
 	.carousel-inner
 		.item
 			height: 300px
@@ -809,7 +810,7 @@ body
 		border-color: transparent 
 		
 .slider
-	height: 370px
+	height: 470px
 	overflow: hidden
 	.slider-in
 		position: relative
@@ -820,29 +821,46 @@ body
 	.slider-item
 		+clr
 		.slider-item-left
-			width: 20%
+			width: 25%
+			padding-left: 1%
 			height: 370px
 			float: left
+			background: #FFF
+			+g3(#c6c6c6, #fff, #fff)
+			+box-shadow(inset 0 4px 2px rgba(#000, .2))
+			+r(w768)
+				width: 100%
 			.slider-item-left-img
 				height: 100%
 				+cover
 		.slider-item-right
-			width: 20%
+			width: 25%
+			padding-right: 1%
 			height: 370px
 			float: left
+			background: #FFF
+			+g3(#c6c6c6, #fff, #fff)
+			+box-shadow(inset 0 4px 2px rgba(#000, .2))
+			+r(w768)
+				width: 0
 			.slider-item-right-img
 				height: 100%
 				+cover
 		.slider-item-content
-			width: 60%
+			width: 50%
 			padding: 50px 200px 50px 40px
 			height: 370px
 			float: left
 			+g3(#c6c6c6, #fff, #fff)
+			+box-shadow(inset 0 4px 2px rgba(#000, .2))
+			+r(w768)
+				width: 0
 			p
 				overflow: hidden
 				font-size: 18px
-				color: #527FAB 
+				color: #527FAB
+				+r(w1023)
+					font-size: 14px
 			a
 				float: right
 					font-size: 18px
@@ -858,13 +876,48 @@ body
 		top: 85px
 		right: 27%
 		cursor: pointer
+		z-index: 100
 	.slider-next
 		+s(right)
 		position: absolute
 		top: 140px
 		right: 27%
 		cursor: pointer
+		z-index: 100
 
+/* NEW */
+.h1
+	margin-bottom: 20px
+	font-size: 28px
+	color: #527FAB
+	font-style: italic
+
+.mynav-list
+	list-style: none
+	padding: 0
+	.mynav-item
+		margin-bottom: 5px
+	.mynav-link
+		display: block
+		padding: 18px 15px
+		background: #fff 
+		border: 1px solid #BFDFFF
+		+border-radius(5px)
+		font-size: 16px
+		color: #5280AB 
+		&.is-active
+			background: #5482AB
+			color: #fff 
+		&:hover
+			text-decoration: none
+
+.content-img
+	margin-bottom: 20px
+	img
+		width: 100%
+		height: auto
+.content-text
+	font-size: 14px
 // 
 // --------------------------------------------------
 // 
