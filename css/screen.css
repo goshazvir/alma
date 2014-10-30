@@ -2059,11 +2059,13 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 
 .subnav-link { color: #5381ab; }
 
-.dropdown { display: none; min-width: 200px; padding: 0; background: #5482ab; list-style: none; position: absolute; top: 0; margin-top: 55px; }
-@media only screen and (max-width: 768px) { .dropdown { position: static; margin-top: 0; padding-left: 40px; } }
-.dropdown .dropdown-link { padding-left: 20px; padding-right: 20px; display: block; font-size: 16px; font-weight: bold; color: white; text-transform: uppercase; }
+.dropdown { display: none; min-width: 200px; padding: 0; background: white; list-style: none; position: absolute; top: 0; margin-top: 55px; -moz-border-radius: 0 0 6px 6px; -webkit-border-radius: 0; border-radius: 0 0 6px 6px; -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); }
+@media only screen and (max-width: 768px) { .dropdown { margin: 0 -15px; position: static; margin-top: 0; padding-left: 40px; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; } }
+.dropdown .dropdown-link { padding-left: 20px; padding-right: 20px; display: block; font-size: 16px; font-weight: bold; color: #5381ab; text-transform: uppercase; }
+.dropdown .dropdown-link:hover { text-decoration: none; color: #729600; }
 @media only screen and (max-width: 768px) { .dropdown .dropdown-link { position: relative; }
   .dropdown .dropdown-link:before { content: ""; background: url('../img/icons-s3f4e7aa620.png') 0 -503px no-repeat; width: 6px; height: 8px; position: absolute; left: 0px; top: 50%; margin-top: -4px; } }
+.dropdown .dropdown-item { height: 36px; line-height: 36px; }
 
 .header .header-bg { height: 212px; background: url("../img/header1.png"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; }
 .header .header-bg:before { content: ""; width: 417px; height: 229px; position: absolute; right: 0; bottom: 0; background: url("../img/header2.png"); }
@@ -2298,3 +2300,5 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 .content-img img { width: 100%; height: auto; }
 
 .content-text { font-size: 14px; }
+
+.nav .nav-item:hover { border-color: transparent; }
