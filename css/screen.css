@@ -2287,7 +2287,6 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 .slider .slider-prev { background: url('../img/icons-s3f4e7aa620.png') 0 -235px no-repeat; width: 40px; height: 40px; position: absolute; top: 85px; right: 27%; cursor: pointer; z-index: 100; }
 .slider .slider-next { background: url('../img/icons-s3f4e7aa620.png') 0 -899px no-repeat; width: 40px; height: 40px; position: absolute; top: 140px; right: 27%; cursor: pointer; z-index: 100; }
 
-/* NEW */
 .h1 { margin-bottom: 20px; font-size: 28px; color: #527fab; font-style: italic; }
 
 .mynav-list { list-style: none; padding: 0; }
@@ -2302,3 +2301,45 @@ body { font-size: 14px; font-family: Georgia, serif; line-height: 1.4; -webkit-f
 .content-text { font-size: 14px; }
 
 .nav .nav-item:hover { border-color: transparent; }
+
+.nav-1 a:hover { font-size: 0 !important; }
+
+/* NEW COUNTER STYLE */
+.bar-block.m-counter .bar-block-header { padding: 10px 0 10px; }
+.bar-block.m-counter .bar-block-header .bar-block-header-title { font-size: 16px; line-height: 1.4; }
+
+.counter { margin: 0 -10px; }
+.counter .counter-in { color: #527fab; }
+.counter .counter-link { font-size: 14px; color: #739600; font-weight: bold; text-decoration: underline; }
+.counter .counter-link:hover { text-decoration: none; }
+
+/* jQuery Countdown styles 2.0.0. */
+.countdown-rtl { direction: rtl; }
+
+.countdown-holding span { color: #888; }
+
+.countdown-row { clear: both; width: 100%; padding: 0px 2px; text-align: center; }
+
+.countdown-show1 .countdown-section { width: 98%; }
+
+.countdown-show2 .countdown-section { width: 48%; }
+
+.countdown-show3 .countdown-section { width: 32.5%; }
+
+.countdown-show4 .countdown-section { width: 22%; }
+
+.countdown-show5 .countdown-section { width: 19.5%; }
+
+.countdown-show6 .countdown-section { width: 16.25%; }
+
+.countdown-show7 .countdown-section { width: 14%; }
+
+.countdown-section { display: block; float: left; font-size: 75%; text-align: center; background: #F3F7F8; margin-left: 2%; }
+
+.countdown-section:first-child { margin-left: 0; }
+
+.countdown-amount { font-size: 26px; font-weight: bold; }
+
+.countdown-period { display: block; font-size: 10px; font-weight: bold; color: #739600; }
+
+.countdown-descr { display: block; width: 100%; }

@@ -131,4 +131,7 @@ head.ready(function() {
 		 $(".nav-list").slideToggle();
 		});
 
+		$('#defaultCountdown').countdown({until: '+6d +21h +39m +27s', format: 'YOWDHMS', significant: 4}); 
+
+
 });

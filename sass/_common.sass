@@ -7,7 +7,7 @@
 // Variables & mixins & extend
 // --------------------------------------------------
 $green: #729600
-$blue: #5381AB
+$blue: #5381AB 
 // Common blocks
 body
 	font-size: 14px
@@ -895,7 +895,7 @@ body
 		cursor: pointer
 		z-index: 100
 
-/* NEW */
+// NEW
 .h1
 	margin-bottom: 20px
 	font-size: 28px
@@ -938,3 +938,30 @@ body
 	.nav-item
 		&:hover
 			border-color: transparent
+			
+.nav-1
+	a
+		&:hover
+			font-size: 0 !important 
+			
+
+/* NEW COUNTER STYLE */
+.bar-block
+	&.m-counter 
+		.bar-block-header  
+			padding: 10px 0 10px
+			.bar-block-header-title
+				font-size: 16px
+				line-height: 1.4  
+
+.counter
+	margin: 0 -10px
+	.counter-in
+		color: #527FAB 
+	.counter-link
+		font-size: 14px
+		color: #739600
+		font-weight: bold 
+		text-decoration: underline
+		&:hover
+			text-decoration: none
