@@ -7,7 +7,7 @@
 // Variables & mixins & extend
 // --------------------------------------------------
 $green: #729600
-$blue: #5381AB
+$blue: #5381AB 
 // Common blocks
 body
 	font-size: 14px
@@ -107,23 +107,30 @@ body
 	display: none
 	min-width: 200px
 	padding: 0
-	background: #5482AB
+	background: #fff
 	list-style: none
 	position: absolute
 	top: 0
 	margin-top: 55px
+	+border-radius(0 0 6px 6px)
+	+box-shadow(0 2px 8px rgba(0, 0, 0, 0.2))
 	+r(w768)
+		margin: 0 -15px
 		position: static
 		margin-top: 0
 		padding-left: 40px
+		+border-radius(0)
 	.dropdown-link
 		padding-left: 20px
 		padding-right: 20px
 		display: block
 		font-size: 16px
 		font-weight: bold
-		color: white
+		color: #5381AB
 		text-transform: uppercase
+		&:hover
+			text-decoration: none
+			color: #729600 
 		+r(w768)
 			position: relative
 			&:before
@@ -133,6 +140,9 @@ body
 				left: 0px
 				top: 50%
 				margin-top: -4px
+	.dropdown-item
+		height: 36px
+		line-height: 36px
 
 .header
 	.header-bg
@@ -885,7 +895,7 @@ body
 		cursor: pointer
 		z-index: 100
 
-/* NEW */
+// NEW
 .h1
 	margin-bottom: 20px
 	font-size: 28px
@@ -923,3 +933,35 @@ body
 // 
 // --------------------------------------------------
 
+
+.nav
+	.nav-item
+		&:hover
+			border-color: transparent
+			
+.nav-1
+	a
+		&:hover
+			font-size: 0 !important 
+			
+
+/* NEW COUNTER STYLE */
+.bar-block
+	&.m-counter 
+		.bar-block-header  
+			padding: 10px 0 10px
+			.bar-block-header-title
+				font-size: 16px
+				line-height: 1.4  
+
+.counter
+	margin: 0 -10px
+	.counter-in
+		color: #527FAB 
+	.counter-link
+		font-size: 14px
+		color: #739600
+		font-weight: bold 
+		text-decoration: underline
+		&:hover
+			text-decoration: none
